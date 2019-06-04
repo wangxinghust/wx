@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
 public:
 	bool isNumber(string s) {
-		//È¥µôÊ×Î²¿Õ¸ñ
+		//È¥ï¿½ï¿½ï¿½ï¿½Î²ï¿½Õ¸ï¿½
 		s.erase(0, s.find_first_not_of(' '));
 		s.erase(s.find_last_not_of(' ') + 1);
 
@@ -38,7 +38,7 @@ public:
 		}
 	}
 
-	//¶ÔÐ¡ÊýµÄÅÐ¶Ï
+	//ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
 	bool isDouble(string s) {
 		if (s.empty()) return false;
 
@@ -102,6 +102,7 @@ int main(int argc, char* argv[]) {
 		test[i] = s.isNumber(strs[i]);
 		if (test[i] ^ ans[i]) {
 			int i = 0;
+			int j = 0;
 		}
 	}
 
