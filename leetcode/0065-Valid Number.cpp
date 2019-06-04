@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
 public:
 	bool isNumber(string s) {
-		//ȥ����β�ո�
+		//去除字符串首尾空格
 		s.erase(0, s.find_first_not_of(' '));
 		s.erase(s.find_last_not_of(' ') + 1);
 
@@ -38,7 +38,7 @@ public:
 		}
 	}
 
-	//��С�����ж�
+	//判断是否是小数
 	bool isDouble(string s) {
 		if (s.empty()) return false;
 
