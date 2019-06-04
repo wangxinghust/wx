@@ -90,21 +90,21 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-	vector<string> strs = { "0"," 0.1 ","abc","1 a","2e10"," -90e3   "," 1e","e3"," 6e-1"," 99e2.5 ","53.5e93"," --6 ","-+3","95a54e53","." ,"0.." ,"3." ,"4e+" };
-
-	vector<bool> ans = { true,true,false,false,true,true,false,false,true,false,true,false,false,false,false,false ,true ,false };
-
-	vector<bool> test(strs.size());
-	Solution s;
-	for (size_t i = 0; i < strs.size(); i++)
-	{
-		test[i] = s.isNumber(strs[i]);
-		if (test[i] ^ ans[i]) {
-			int i = 0;
-			int j = 0;
-		}
-	}
-
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	vector<string> strs = { "0"," 0.1 ","abc","1 a","2e10"," -90e3   "," 1e","e3"," 6e-1"," 99e2.5 ","53.5e93"," --6 ","-+3","95a54e53","." ,"0.." ,"3." ,"4e+" };
+//
+//	vector<bool> ans = { true,true,false,false,true,true,false,false,true,false,true,false,false,false,false,false ,true ,false };
+//
+//	vector<bool> test(strs.size());
+//	Solution s;
+//	for (size_t i = 0; i < strs.size(); i++)
+//	{
+//		test[i] = s.isNumber(strs[i]);
+//		if (test[i] ^ ans[i]) {
+//			int i = 0;
+//			int j = 0;
+//		}
+//	}
+//
+//	return 0;
+//}
