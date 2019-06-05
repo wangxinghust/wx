@@ -222,5 +222,8 @@
     <ClCompile Include="0068-Text Justification.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0069-Sqrt(x).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
