@@ -181,6 +181,8 @@
     <ClCompile Include="0064-Minimum Path Sum.cpp" />
     <ClCompile Include="0065-Valid Number.cpp" />
     <ClCompile Include="0066-Plus One.cpp" />
+    <ClCompile Include="0067-Add Binary.cpp" />
+    <ClCompile Include="0068-Text Justification.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
