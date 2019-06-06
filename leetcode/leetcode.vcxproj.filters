@@ -234,5 +234,8 @@
     <ClCompile Include="0072-Edit Distance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0073-Set Matrix Zeroes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -57,7 +57,7 @@ public:
 	}
 
 	//optimize  just one vector. 1个vector加一个临时变量
-	int minDistance(string word1, string word2) {
+	int minDistance3(string word1, string word2) {
 		int m = word1.size(), n = word2.size(), pre;
 		vector<int> cur(n + 1, 0);
 		for (int j = 1; j <= n; j++) {
