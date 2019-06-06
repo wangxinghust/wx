@@ -25,8 +25,8 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-	Solution s;
-	int ans = s.mySqrt(0);
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	Solution s;
+//	int ans = s.mySqrt(0);
+//	return 0;
+//}

@@ -225,5 +225,14 @@
     <ClCompile Include="0069-Sqrt(x).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0070-Climbing Stairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0071-Simplify Path.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0072-Edit Distance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
