@@ -94,11 +94,38 @@ public:
 	//TODO
 	void setZeroes4(vector<vector<int>>& matrix) {
 		int m = matrix.size(), n = matrix[0].size();
+		//左上角只表示第一行的标志，额外增加一个标志标明第一列
+		bool isCol = false;
 		for (int i = 0; i < m; i++) {
+			if (matrix[i][0] == 0) isCol = true;
 			for (int j = 0; j < n; j++) {
-				
+				if (matrix[i][j] == 0) {
+					matrix[0][j] = 0;
+					matrix[i][0] = 0;
+				}
 			}
 		}
+
+		//遍历，除标志行和标志列
+		for (int i = 1; i < m; i++) {
+			for (int j = 1; j < n; j++) {
+				if (matrix[i][0] == 0 || matrix[0][j] == 0) {
+					matrix[i][j] = 0;
+				}
+			}
+		}
+
+		//遍历第一行
+		if (matrix[0][0] == 0) {
+			matrix[0].assign(n, 0);
+		}
+		//遍历第一列
+		if (isCol) {
+			for (int i = 0; i < n; i++) {
+				matrix[i][0] = 0;
+			}
+		}
+
 		return;
 	}
 };
