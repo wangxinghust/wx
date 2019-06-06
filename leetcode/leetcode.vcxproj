@@ -184,6 +184,7 @@
     <ClCompile Include="0067-Add Binary.cpp" />
     <ClCompile Include="0068-Text Justification.cpp" />
     <ClCompile Include="0069-Sqrt(x).cpp" />
+    <ClCompile Include="0070-Climbing Stairs.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
