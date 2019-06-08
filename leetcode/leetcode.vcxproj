@@ -188,6 +188,7 @@
     <ClCompile Include="0071-Simplify Path.cpp" />
     <ClCompile Include="0072-Edit Distance.cpp" />
     <ClCompile Include="0073-Set Matrix Zeroes.cpp" />
+    <ClCompile Include="0074-Search a 2D Matrix.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -80,14 +80,14 @@ public:
 				for (int i = 0; i < m; i++) {
 					matrix[i][j] = 0;
 				}
-			}			
+			}
 		}
 		return;
 	}
 
 	//leetcode Approach 1: Additional Memory Approach
 	//Approach 2: Brute O(1) space.
-	
+
 	//Approach 3: O(1) Space, Efficient Solution
 	//利用原始矩阵直接做标记，将第一行和第一列用作标志行列
 
@@ -98,7 +98,8 @@ public:
 		bool isCol = false;
 		for (int i = 0; i < m; i++) {
 			if (matrix[i][0] == 0) isCol = true;
-			for (int j = 0; j < n; j++) {
+			//j从1开始，第一列是否需要置0用isCol来标记
+			for (int j = 1; j < n; j++) {
 				if (matrix[i][j] == 0) {
 					matrix[0][j] = 0;
 					matrix[i][0] = 0;
@@ -121,7 +122,7 @@ public:
 		}
 		//遍历第一列
 		if (isCol) {
-			for (int i = 0; i < n; i++) {
+			for (int i = 0; i < m; i++) {
 				matrix[i][0] = 0;
 			}
 		}
@@ -130,9 +131,9 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-	Solution s;
-	vector<vector<int>> matrix = { {1,1,1},{1,0,1},{1,1,1} };
-	s.setZeroes2(matrix);
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	Solution s;
+//	vector<vector<int>> matrix = { {1,1,1},{0,1,2}};
+//	s.setZeroes4(matrix);
+//	return 0;
+//}
