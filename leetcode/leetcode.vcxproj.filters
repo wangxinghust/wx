@@ -240,5 +240,11 @@
     <ClCompile Include="0074-Search a 2D Matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0075-Sort Colors.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0076-Minimum Window Substring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
