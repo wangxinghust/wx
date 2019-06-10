@@ -255,5 +255,11 @@
     <ClCompile Include="0079-Word Search.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0080-Remove Duplicates from Sorted Array II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0081-Search in Rotated Sorted Array II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

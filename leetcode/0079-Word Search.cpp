@@ -3,6 +3,8 @@
 using namespace std;
 class Solution {
 public:
+	//Runtime: 32 ms, faster than 74.43% of C++ online submissions for Word Search.
+	//Memory Usage : 11 MB, less than 71.41 % of C++ online submissions for Word Search.
 	bool exist(vector<vector<char>>& board, string word) {
 		if (board.empty() || board[0].empty()) return word.empty();
 		if (word.empty()) return true;
@@ -26,8 +28,9 @@ public:
 				return true;
 			}
 			flag[x][y] = false;
+			//return false;
 		}
-		else return false;
+		return false;
 	}
 };
 

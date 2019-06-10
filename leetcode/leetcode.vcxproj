@@ -194,6 +194,8 @@
     <ClCompile Include="0077-Combinationss.cpp" />
     <ClCompile Include="0078-Subsets.cpp" />
     <ClCompile Include="0079-Word Search.cpp" />
+    <ClCompile Include="0080-Remove Duplicates from Sorted Array II.cpp" />
+    <ClCompile Include="0081-Search in Rotated Sorted Array II.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
