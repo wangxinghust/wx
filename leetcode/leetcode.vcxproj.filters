@@ -246,5 +246,14 @@
     <ClCompile Include="0076-Minimum Window Substring.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0077-Combinationss.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0078-Subsets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0079-Word Search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

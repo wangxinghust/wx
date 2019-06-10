@@ -191,6 +191,9 @@
     <ClCompile Include="0074-Search a 2D Matrix.cpp" />
     <ClCompile Include="0075-Sort Colors.cpp" />
     <ClCompile Include="0076-Minimum Window Substring.cpp" />
+    <ClCompile Include="0077-Combinationss.cpp" />
+    <ClCompile Include="0078-Subsets.cpp" />
+    <ClCompile Include="0079-Word Search.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
