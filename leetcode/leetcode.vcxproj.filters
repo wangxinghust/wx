@@ -261,5 +261,14 @@
     <ClCompile Include="0081-Search in Rotated Sorted Array II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0082-Remove Duplicates from Sorted List II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0083-Remove Duplicates from Sorted List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0084-argest Rectangle in Histogram.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

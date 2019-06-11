@@ -22,13 +22,13 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{6AEC51F5-018D-467A-968A-03D190CCFA69}</ProjectGuid>
     <RootNamespace>leetcode</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -196,6 +196,9 @@
     <ClCompile Include="0079-Word Search.cpp" />
     <ClCompile Include="0080-Remove Duplicates from Sorted Array II.cpp" />
     <ClCompile Include="0081-Search in Rotated Sorted Array II.cpp" />
+    <ClCompile Include="0082-Remove Duplicates from Sorted List II.cpp" />
+    <ClCompile Include="0083-Remove Duplicates from Sorted List.cpp" />
+    <ClCompile Include="0084-argest Rectangle in Histogram.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

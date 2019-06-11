@@ -34,12 +34,12 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-	vector<vector<char>> board = { {'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'} };
-	string word = "ABCCED";
-	string word2 = "SEE";
-	string word3 = "ABCB";
-	Solution s;
-	bool b = s.exist(board, word3);
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	vector<vector<char>> board = { {'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'} };
+//	string word = "ABCCED";
+//	string word2 = "SEE";
+//	string word3 = "ABCB";
+//	Solution s;
+//	bool b = s.exist(board, word3);
+//	return 0;
+//}
