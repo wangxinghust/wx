@@ -199,6 +199,14 @@
     <ClCompile Include="0082-Remove Duplicates from Sorted List II.cpp" />
     <ClCompile Include="0083-Remove Duplicates from Sorted List.cpp" />
     <ClCompile Include="0084-argest Rectangle in Histogram.cpp" />
+    <ClCompile Include="0085-Maximal Rectangle.cpp" />
+    <ClCompile Include="0086-Partition List.cpp" />
+    <ClCompile Include="0087-Scramble String.cpp" />
+    <ClCompile Include="0088-Merge Sorted Array.cpp" />
+    <ClCompile Include="0089-Gray Code.cpp" />
+    <ClCompile Include="0090-Subsets II.cpp" />
+    <ClCompile Include="0091-Decode Ways.cpp" />
+    <ClCompile Include="0092-Reverse Linked List II.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

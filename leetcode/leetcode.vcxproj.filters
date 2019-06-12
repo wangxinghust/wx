@@ -270,5 +270,29 @@
     <ClCompile Include="0084-argest Rectangle in Histogram.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0085-Maximal Rectangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0086-Partition List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0087-Scramble String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0088-Merge Sorted Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0089-Gray Code.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0090-Subsets II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0091-Decode Ways.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0092-Reverse Linked List II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
