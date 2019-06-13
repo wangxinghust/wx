@@ -207,6 +207,13 @@
     <ClCompile Include="0090-Subsets II.cpp" />
     <ClCompile Include="0091-Decode Ways.cpp" />
     <ClCompile Include="0092-Reverse Linked List II.cpp" />
+    <ClCompile Include="0093-Restore IP Addresses.cpp" />
+    <ClCompile Include="0094-Binary Tree Inorder Traversal.cpp" />
+    <ClCompile Include="0095-Unique Binary Search Trees II.cpp" />
+    <ClCompile Include="0096-Unique Binary Search Trees.cpp" />
+    <ClCompile Include="0097-Interleaving String.cpp" />
+    <ClCompile Include="0098-Validate Binary Search Tree.cpp" />
+    <ClCompile Include="0099-Recover Binary Search Tree.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

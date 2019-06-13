@@ -294,5 +294,26 @@
     <ClCompile Include="0092-Reverse Linked List II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0093-Restore IP Addresses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0094-Binary Tree Inorder Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0095-Unique Binary Search Trees II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0096-Unique Binary Search Trees.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0097-Interleaving String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0098-Validate Binary Search Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0099-Recover Binary Search Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
