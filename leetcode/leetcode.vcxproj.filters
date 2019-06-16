@@ -318,5 +318,11 @@
     <ClCompile Include="0100-Same Tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0101-Symmetric Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0102-Binary Tree Level Order Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

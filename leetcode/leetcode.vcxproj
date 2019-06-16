@@ -28,7 +28,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -215,6 +215,8 @@
     <ClCompile Include="0098-Validate Binary Search Tree.cpp" />
     <ClCompile Include="0099-Recover Binary Search Tree.cpp" />
     <ClCompile Include="0100-Same Tree.cpp" />
+    <ClCompile Include="0102-Binary Tree Level Order Traversal.cpp" />
+    <ClCompile Include="0101-Symmetric Tree.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
