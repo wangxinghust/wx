@@ -217,6 +217,8 @@
     <ClCompile Include="0100-Same Tree.cpp" />
     <ClCompile Include="0102-Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="0101-Symmetric Tree.cpp" />
+    <ClCompile Include="0103-Binary Tree Zigzag Level Order Traversal.cpp" />
+    <ClCompile Include="0104-Maximum Depth of Binary Tree.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

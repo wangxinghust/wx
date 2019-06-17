@@ -40,14 +40,14 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-	TreeNode* root = new TreeNode(3);
-	root->left = new TreeNode(9);
-	root->right = new TreeNode(20);
-	TreeNode* tmp = root->right;
-	tmp->left = new TreeNode(15);
-	tmp->right = new TreeNode(7);
-
-	vector<vector<int>> ans = Solution().levelOrder(root);
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	TreeNode* root = new TreeNode(3);
+//	root->left = new TreeNode(9);
+//	root->right = new TreeNode(20);
+//	TreeNode* tmp = root->right;
+//	tmp->left = new TreeNode(15);
+//	tmp->right = new TreeNode(7);
+//
+//	vector<vector<int>> ans = Solution().levelOrder(root);
+//	return 0;
+//}
