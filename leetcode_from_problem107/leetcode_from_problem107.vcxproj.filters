@@ -21,5 +21,11 @@
     <ClCompile Include="0108-Convert Sorted Array to Binary Search Tree.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0697-Degree of an Array.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0109-Convert Sorted List to Binary Search Tree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
