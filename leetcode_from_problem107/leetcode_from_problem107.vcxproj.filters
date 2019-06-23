@@ -30,5 +30,8 @@
     <ClCompile Include="0110-Balanced Binary Tree.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0116-Populating Next Right Pointers in Each Node.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,5 +1,6 @@
 #include <queue>
 #include <string>
+#include <iostream>
 using namespace std;
 
 // definition for a binary tree node.
@@ -18,25 +19,28 @@ public:
 class Solution {
 public:
 	bool isBalanced(TreeNode* root) {
-		if (!root) return true;
-		queue<TreeNode*> q;
-		q.push(root);
-		int level = 1;
-		int minLevel = 0;
-		while (!q.empty()) {
-			TreeNode* t = q.front();
-			q.pop();
-			if (!t->left && t->right) {
-				if (!minLevel) minLevel = level;
-				else if (level > minLevel + 1) return false;
-			}
-			else {
-				if (t->left) q.push(t->left);
-				if (t->right) q.push(t->right);
-			}
-			++level;
-		}
-		return true;
+		if (root == NULL) return true;
+		if (depth(root->left) > depth(root->right) + 1 || depth(root->right) > depth(root->left) + 1) return false;
+		return isBalanced(root->left) && isBalanced(root->right);
+	}
+	int depth(TreeNode* root) {
+		if (root == NULL) return 0;
+		return max(depth(root->left) + 1, depth(root->right) + 1);
+	}
+
+	// leetcode by yuzhoujr
+	// ÒýÈë-1
+	bool isBalanced2(TreeNode* root) {
+		int height = getHeight(root);
+		return height != -1;
+	}
+	int getHeight(TreeNode* root) {
+		if (!root) return 0;
+		int left = getHeight(root->left);
+		int right = getHeight(root->right);
+		if (left == -1 || right == -1) return -1;
+		if (abs(left - right) > 1) return -1;
+		return max(left, right) + 1;
 	}
 };
 
@@ -52,20 +56,43 @@ TreeNode* CreateTree(vector<string>& nums) {
 		TreeNode* node = nodeQueue.front();
 		nodeQueue.pop();
 
-		if (++i < nums.size() && nums[i] != "null") {
-			node->left = new TreeNode(stoi(nums[i]));
-			nodeQueue.push(node->left);
+		if (++i < nums.size()) {
+			if (nums[i] != "null") {
+				node->left = new TreeNode(stoi(nums[i]));
+				nodeQueue.push(node->left);
+			}
+			else {
+				node->left = nullptr;
+			}
+
 		}
 		if (++i < nums.size() && nums[i] != "null") {
-			node->right = new TreeNode(stoi(nums[i]));
-			nodeQueue.push(node->right);
+			if (nums[i] != "null") {
+				node->right = new TreeNode(stoi(nums[i]));
+				nodeQueue.push(node->right);
+			}
+			else {
+				node->right = nullptr;
+			}
 		}
 	}
 	return root;
 }
 
 int main(int argc, char* argv[]) {
+	vector<vector<string>> testcase;
 	vector<string> nums = { "3","9","20","null","null","15","7" };
-	TreeNode* root = CreateTree(nums);
+	testcase.push_back(nums);
+	vector<string> nums2 = { "1","2","2","3","3","null","null","4","4" };
+	testcase.push_back(nums2);
+	vector<string> nums3 = { "1","null","2","null","3" };
+	testcase.push_back(nums3);
+	vector<string> nums4 = { "1","2","2","3","3","3","3","4","4","4","4","4","4","null","null","5","5" };
+	testcase.push_back(nums4);
+	for (auto v : testcase) {
+		TreeNode* root = CreateTree(v);
+		bool b = Solution().isBalanced(root);
+		cout << b << endl;
+	}
 	return 0;
 }

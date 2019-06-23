@@ -18,8 +18,8 @@ public:
 				}
 				else {
 					auto p = find(nums.begin(), nums.end(), nums[i]);
-					//int tmp = p - nums.begin(); leetcode 编译不通过，需这样修改
-					len = min(len, i - (p - nums.begin()) + 1);
+					int tmp = p - nums.begin();
+					len = min(len, i - tmp + 1);
 				}
 			}
 		}
