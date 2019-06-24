@@ -128,6 +128,7 @@
     <ClCompile Include="0109-Convert Sorted List to Binary Search Tree.cpp" />
     <ClCompile Include="0110-Balanced Binary Tree.cpp" />
     <ClCompile Include="0116-Populating Next Right Pointers in Each Node.cpp" />
+    <ClCompile Include="0118-Pascal%27s Triangle.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
