@@ -150,9 +150,6 @@
     <ClCompile Include="0045-Jump Game II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="0221-Maximal Square.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="0046-Permutations.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

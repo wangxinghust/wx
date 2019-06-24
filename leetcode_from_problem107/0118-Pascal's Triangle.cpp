@@ -2,6 +2,8 @@
 using namespace std;
 class Solution {
 public:
+	// dp
+	
 	vector<vector<int>> generate(int numRows) {
 		vector<vector<int>> res;
 		if (numRows <= 0) return res;
