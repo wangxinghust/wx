@@ -39,5 +39,8 @@
     <ClCompile Include="0221-Maximal Square.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0121-Best Time to Buy and Sell Stock.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -79,20 +79,20 @@ TreeNode* CreateTree(vector<string>& nums) {
 	return root;
 }
 
-int main(int argc, char* argv[]) {
-	vector<vector<string>> testcase;
-	vector<string> nums = { "3","9","20","null","null","15","7" };
-	testcase.push_back(nums);
-	vector<string> nums2 = { "1","2","2","3","3","null","null","4","4" };
-	testcase.push_back(nums2);
-	vector<string> nums3 = { "1","null","2","null","3" };
-	testcase.push_back(nums3);
-	vector<string> nums4 = { "1","2","2","3","3","3","3","4","4","4","4","4","4","null","null","5","5" };
-	testcase.push_back(nums4);
-	for (auto v : testcase) {
-		TreeNode* root = CreateTree(v);
-		bool b = Solution().isBalanced(root);
-		cout << b << endl;
-	}
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	vector<vector<string>> testcase;
+//	vector<string> nums = { "3","9","20","null","null","15","7" };
+//	testcase.push_back(nums);
+//	vector<string> nums2 = { "1","2","2","3","3","null","null","4","4" };
+//	testcase.push_back(nums2);
+//	vector<string> nums3 = { "1","null","2","null","3" };
+//	testcase.push_back(nums3);
+//	vector<string> nums4 = { "1","2","2","3","3","3","3","4","4","4","4","4","4","null","null","5","5" };
+//	testcase.push_back(nums4);
+//	for (auto v : testcase) {
+//		TreeNode* root = CreateTree(v);
+//		bool b = Solution().isBalanced(root);
+//		cout << b << endl;
+//	}
+//	return 0;
+//}
