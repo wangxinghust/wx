@@ -27,7 +27,7 @@ public:
 		else return false;
 	}
 
-	//leetcode Approarch 1: Recursion
+	//leetcode approach 1: Recursion
 	bool isSameTree1(TreeNode* p, TreeNode* q) {
 		// p and q are both null
 		if (!p && !q) return true;
@@ -37,7 +37,7 @@ public:
 		return isSameTree1(p->right, q->right) && isSameTree1(p->left, q->left);
 	}
 
-	// leetcode Approarch 2: Iteration
+	// leetcode approach 2: Iteration
 	//Runtime: 4 ms, faster than 84.41% of C++ online submissions for Same Tree.
 	//Memory Usage : 10 MB, less than 41.15 % of C++ online submissions for Same Tree.
 	bool check(TreeNode* p, TreeNode* q) {

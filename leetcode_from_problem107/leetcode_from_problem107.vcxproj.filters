@@ -45,5 +45,14 @@
     <ClCompile Include="0122-Best Time to Buy and Sell Stock II.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0124-Binary Tree Maximum Path Sum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0125-Valid Palindrome.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0127-Word Ladder.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -131,6 +131,9 @@
     <ClCompile Include="0118-Pascal%27s Triangle.cpp" />
     <ClCompile Include="0121-Best Time to Buy and Sell Stock.cpp" />
     <ClCompile Include="0122-Best Time to Buy and Sell Stock II.cpp" />
+    <ClCompile Include="0124-Binary Tree Maximum Path Sum.cpp" />
+    <ClCompile Include="0125-Valid Palindrome.cpp" />
+    <ClCompile Include="0127-Word Ladder.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>

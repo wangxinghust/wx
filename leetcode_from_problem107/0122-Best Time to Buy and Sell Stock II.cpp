@@ -23,10 +23,22 @@ public:
 		}
 		return profit;
 	}
+
+	//思路二 比前大则进行买入卖出操作
+	//Runtime: 8 ms, faster than 81.87 % of C++ online submissions for Best Time to Buy and Sell Stock II.
+	//Memory Usage : 9.6 MB, less than 10.22 % of C++ online submissions for Best Time to Buy and Sell Stock II.
+	int maxProfit2(vector<int>& prices) {
+		if (prices.size() <= 1) return 0;
+		int profit = 0;
+		for (int i = 1; i < prices.size(); i++) {
+			if (prices[i] > prices[i - 1]) profit += prices[i] - prices[i - 1];
+		}
+		return profit;
+	}	
 };
 
-int main(int argc, char* argv[]) {
-	vector<int> prices = { 7,1,5,3,6,4 };
-	int ans = Solution().maxProfit(prices);
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	vector<int> prices = { 7,1,5,3,6,4 };
+//	int ans = Solution().maxProfit(prices);
+//	return 0;
+//}
