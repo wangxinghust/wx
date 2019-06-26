@@ -54,5 +54,20 @@
     <ClCompile Include="0127-Word Ladder.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0128-Longest Consecutive Sequence.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0130-Surrounded Regions.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0131-Palindrome Partitioning.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0134-Gas Station.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0136-Single Number.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
