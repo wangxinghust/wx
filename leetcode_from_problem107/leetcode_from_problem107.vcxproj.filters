@@ -69,5 +69,8 @@
     <ClCompile Include="0136-Single Number.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0138-Copy List with Random Pointer.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
