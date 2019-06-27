@@ -140,6 +140,7 @@
     <ClCompile Include="0134-Gas Station.cpp" />
     <ClCompile Include="0136-Single Number.cpp" />
     <ClCompile Include="0138-Copy List with Random Pointer.cpp" />
+    <ClCompile Include="0139-Word Break.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>
