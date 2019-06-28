@@ -141,6 +141,11 @@
     <ClCompile Include="0136-Single Number.cpp" />
     <ClCompile Include="0138-Copy List with Random Pointer.cpp" />
     <ClCompile Include="0139-Word Break.cpp" />
+    <ClCompile Include="0140-Word Break II.cpp" />
+    <ClCompile Include="0141-Linked List Cycle.cpp" />
+    <ClCompile Include="0146-LRU Cache.cpp" />
+    <ClCompile Include="0148-Sort List.cpp" />
+    <ClCompile Include="0149-Max Points on a Line.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>

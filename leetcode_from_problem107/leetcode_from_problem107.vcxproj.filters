@@ -75,5 +75,20 @@
     <ClCompile Include="0139-Word Break.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0140-Word Break II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0141-Linked List Cycle.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0146-LRU Cache.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0148-Sort List.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0149-Max Points on a Line.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
