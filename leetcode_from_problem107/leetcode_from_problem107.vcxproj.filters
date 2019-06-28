@@ -90,5 +90,17 @@
     <ClCompile Include="0149-Max Points on a Line.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0150-Evaluate Reverse Polish Notation.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0152-Maximum Product Subarray.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0155-Min Stack.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0160-Intersection of Two Linked List.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

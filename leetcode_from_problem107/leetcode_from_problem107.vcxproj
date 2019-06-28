@@ -146,6 +146,10 @@
     <ClCompile Include="0146-LRU Cache.cpp" />
     <ClCompile Include="0148-Sort List.cpp" />
     <ClCompile Include="0149-Max Points on a Line.cpp" />
+    <ClCompile Include="0150-Evaluate Reverse Polish Notation.cpp" />
+    <ClCompile Include="0152-Maximum Product Subarray.cpp" />
+    <ClCompile Include="0155-Min Stack.cpp" />
+    <ClCompile Include="0160-Intersection of Two Linked List.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>
