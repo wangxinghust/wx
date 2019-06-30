@@ -111,5 +111,8 @@
     <ClCompile Include="0169-Majority Element.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0171-Excel Sheet Column Number.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
