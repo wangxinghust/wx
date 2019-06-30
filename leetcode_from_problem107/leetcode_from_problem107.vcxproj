@@ -152,6 +152,7 @@
     <ClCompile Include="0160-Intersection of Two Linked List.cpp" />
     <ClCompile Include="0162-Find Peak Element.cpp" />
     <ClCompile Include="0166-Fraction to Recurring Decimal.cpp" />
+    <ClCompile Include="0169-Majority Element.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>
