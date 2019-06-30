@@ -150,6 +150,8 @@
     <ClCompile Include="0152-Maximum Product Subarray.cpp" />
     <ClCompile Include="0155-Min Stack.cpp" />
     <ClCompile Include="0160-Intersection of Two Linked List.cpp" />
+    <ClCompile Include="0162-Find Peak Element.cpp" />
+    <ClCompile Include="0166-Fraction to Recurring Decimal.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>

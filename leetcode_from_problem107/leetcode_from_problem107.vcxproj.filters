@@ -102,5 +102,11 @@
     <ClCompile Include="0160-Intersection of Two Linked List.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0162-Find Peak Element.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0166-Fraction to Recurring Decimal.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
