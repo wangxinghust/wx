@@ -51,7 +51,7 @@ public:
 };
 
 // Approach 6: Boyer-Moore Voting Algorithm
-class Solution {
+class Solution3 {
 public:
 	int majorityElement(vector<int>& nums) {
 		int count = 0;
@@ -61,5 +61,57 @@ public:
 			count += (nums[i] == candidate) ? 1 : -1;
 		}
 		return candidate;
+	}
+};
+
+// 剑指offer 基于快排的改进
+// Runtime: 28 ms, faster than 33.77% of C++ online submissions for Majority Element.
+// Memory Usage : 11 MB, less than 54.03 % of C++ online submissions for Majority Element.
+class Solution4 {
+public:
+	int majorityElement(vector<int>& nums) {
+		int length = nums.size();
+		int middle = length >> 1;
+		int start = 0;
+		int end = length - 1;
+		int index = partition(nums, length, start, end);
+		while (index != middle) {
+			if (index > middle) {
+				end = index - 1;
+				index = partition(nums, length, start, end);
+			}
+			else {
+				start = index + 1;
+				index = partition(nums, length, start, end);
+			}
+		}
+		int result = nums[middle];
+		return result;
+	}
+private:
+	int partition(vector<int>& nums, int length, int start, int end) {
+		if (nums.empty() || length <= 0 || start < 0 || end >= length) 
+			// return -1;leetcode中不支持异常
+			throw new exception("Invalid Parameters");
+
+		int index = RandomInRange(start, end);
+		swap(nums[index], nums[end]);
+
+		int small = start - 1;
+		for (index = start; index < end; ++index) {
+			if (nums[index] < nums[end]) {
+				++small;
+				if (small != index) {
+					swap(nums[index], nums[small]);
+				}
+			}
+		}
+		++small;
+		swap(nums[small], nums[end]);
+		return small;
+	}
+	int RandomInRange(int start,int end) {
+		if (start == end) return start;
+		return (rand() % (end - start)) + start;
 	}
 };

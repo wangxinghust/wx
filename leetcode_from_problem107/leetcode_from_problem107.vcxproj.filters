@@ -114,5 +114,14 @@
     <ClCompile Include="0171-Excel Sheet Column Number.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0172-Factorial Trailing Zeroes.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0179-Largest Number.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0189-Rotate Array.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
