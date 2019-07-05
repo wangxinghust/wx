@@ -157,6 +157,7 @@
     <ClCompile Include="0172-Factorial Trailing Zeroes.cpp" />
     <ClCompile Include="0179-Largest Number.cpp" />
     <ClCompile Include="0189-Rotate Array.cpp" />
+    <ClCompile Include="0190-Reverse Bits.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>
