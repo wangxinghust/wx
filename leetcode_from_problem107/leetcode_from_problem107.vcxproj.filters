@@ -126,5 +126,14 @@
     <ClCompile Include="0190-Reverse Bits.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0191-Number of 1 Bits.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0198-House Robber.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0200-Number of Islands.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
