@@ -161,6 +161,9 @@
     <ClCompile Include="0191-Number of 1 Bits.cpp" />
     <ClCompile Include="0198-House Robber.cpp" />
     <ClCompile Include="0200-Number of Islands.cpp" />
+    <ClCompile Include="0202-Happy Number.cpp" />
+    <ClCompile Include="0204-Count Primes.cpp" />
+    <ClCompile Include="0206-Reverse Linked List.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>

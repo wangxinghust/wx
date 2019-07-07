@@ -135,5 +135,14 @@
     <ClCompile Include="0200-Number of Islands.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0202-Happy Number.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0204-Count Primes.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0206-Reverse Linked List.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
