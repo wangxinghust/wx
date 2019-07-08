@@ -164,6 +164,8 @@
     <ClCompile Include="0202-Happy Number.cpp" />
     <ClCompile Include="0204-Count Primes.cpp" />
     <ClCompile Include="0206-Reverse Linked List.cpp" />
+    <ClCompile Include="0207-Course Schedule.cpp" />
+    <ClCompile Include="0208-Implement Trie(Prefix Tree).cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>

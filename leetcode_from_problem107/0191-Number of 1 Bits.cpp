@@ -120,7 +120,7 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-	int bits = Solution5().hammingWeight(11);
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	int bits = Solution5().hammingWeight(11);
+//	return 0;
+//}
