@@ -166,6 +166,11 @@
     <ClCompile Include="0206-Reverse Linked List.cpp" />
     <ClCompile Include="0207-Course Schedule.cpp" />
     <ClCompile Include="0208-Implement Trie(Prefix Tree).cpp" />
+    <ClCompile Include="0210-Course Schedule II.cpp" />
+    <ClCompile Include="0212-Word Search II.cpp" />
+    <ClCompile Include="0215-Kth Largest Element in an Array.cpp" />
+    <ClCompile Include="0217-Contains Duplicate.cpp" />
+    <ClCompile Include="0218-The Skyline Problem.cpp" />
     <ClCompile Include="0221-Maximal Square.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>

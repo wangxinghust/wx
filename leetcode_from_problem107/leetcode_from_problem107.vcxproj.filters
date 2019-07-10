@@ -150,5 +150,20 @@
     <ClCompile Include="0208-Implement Trie(Prefix Tree).cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0210-Course Schedule II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0212-Word Search II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0215-Kth Largest Element in an Array.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0217-Contains Duplicate.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0218-The Skyline Problem.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
