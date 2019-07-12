@@ -162,7 +162,7 @@ public:
 		vector<vector<int>> res;
 
 		for (auto& e : buildings) {
-			all.insert(make_pair(e[0], -e[2])); // critical point, left corner
+			all.insert(make_pair(e[0], -e[2])); // critical point, left corner 存负数，刚好更高的按升序排在前面
 			all.insert(make_pair(e[1], e[2])); // critical point, right corner
 		}
 

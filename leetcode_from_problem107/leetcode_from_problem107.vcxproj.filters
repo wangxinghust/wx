@@ -174,5 +174,32 @@
     <ClCompile Include="0230-Kth Smallest Element in a BST.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0234-Palindrome Linked List.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0236-Lowest Common Ancestor of a Binary Tree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0237-Delete Node in a Linked List.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0238-Product of Array Except Self.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0239-Sliding Window Maximum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0240-Search a 2D Matrix II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0242-Valid Anagram.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0268-Missing Number.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0279-Perfect Squares.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
