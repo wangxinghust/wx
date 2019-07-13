@@ -201,5 +201,23 @@
     <ClCompile Include="0279-Perfect Squares.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0283-Move Zeroes.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0287-Find the Duplicate Number.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0142-Linked List Cycle II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0289-Game of Life.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0295-Find Median from Data Stream.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0297-Serialize and Deserialize Binary Tree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

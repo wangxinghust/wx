@@ -143,6 +143,7 @@
     <ClCompile Include="0139-Word Break.cpp" />
     <ClCompile Include="0140-Word Break II.cpp" />
     <ClCompile Include="0141-Linked List Cycle.cpp" />
+    <ClCompile Include="0142-Linked List Cycle II.cpp" />
     <ClCompile Include="0146-LRU Cache.cpp" />
     <ClCompile Include="0148-Sort List.cpp" />
     <ClCompile Include="0149-Max Points on a Line.cpp" />
@@ -184,6 +185,11 @@
     <ClCompile Include="0242-Valid Anagram.cpp" />
     <ClCompile Include="0268-Missing Number.cpp" />
     <ClCompile Include="0279-Perfect Squares.cpp" />
+    <ClCompile Include="0283-Move Zeroes.cpp" />
+    <ClCompile Include="0287-Find the Duplicate Number.cpp" />
+    <ClCompile Include="0289-Game of Life.cpp" />
+    <ClCompile Include="0295-Find Median from Data Stream.cpp" />
+    <ClCompile Include="0297-Serialize and Deserialize Binary Tree.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
