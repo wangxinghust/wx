@@ -219,5 +219,20 @@
     <ClCompile Include="0297-Serialize and Deserialize Binary Tree.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0300-Longest Increasing Subsequence.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0315-Count of Smaller Numbers After Self.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0322-Coin Change.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0324-Wiggle Sort II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0326-Power of Three.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
