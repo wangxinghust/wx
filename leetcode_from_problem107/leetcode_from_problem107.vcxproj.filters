@@ -252,5 +252,32 @@
     <ClCompile Include="0347-Top K Frequent Elements.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0350-Intersection of Two Arrays II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0371-Sum of Two Integers.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0378-Kth Smallest Element in a Sorted Matrix.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0380-Insert Delete GetRandom O(1).cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0384-Shuffle an Array.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0387-First Unique Character in a String.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0395-Longest Substring with At Least K Repeating Characters.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0412-Fizz Buzz.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0454-4Sum II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

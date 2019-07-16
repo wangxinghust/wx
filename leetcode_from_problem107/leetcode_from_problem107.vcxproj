@@ -201,6 +201,15 @@
     <ClCompile Include="0341-Flatten Nested List Iterator.cpp" />
     <ClCompile Include="0344-Reverse String.cpp" />
     <ClCompile Include="0347-Top K Frequent Elements.cpp" />
+    <ClCompile Include="0350-Intersection of Two Arrays II.cpp" />
+    <ClCompile Include="0371-Sum of Two Integers.cpp" />
+    <ClCompile Include="0378-Kth Smallest Element in a Sorted Matrix.cpp" />
+    <ClCompile Include="0380-Insert Delete GetRandom O(1).cpp" />
+    <ClCompile Include="0384-Shuffle an Array.cpp" />
+    <ClCompile Include="0387-First Unique Character in a String.cpp" />
+    <ClCompile Include="0395-Longest Substring with At Least K Repeating Characters.cpp" />
+    <ClCompile Include="0412-Fizz Buzz.cpp" />
+    <ClCompile Include="0454-4Sum II.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

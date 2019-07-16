@@ -32,7 +32,7 @@ public:
 // leetcode by sxycwzwzq
 // Runtime: 24 ms, faster than 42.63% of C++ online submissions for Top K Frequent Elements.
 // Memory Usage : 11.2 MB, less than 96.67 % of C++ online submissions for Top K Frequent Elements.
-class Solution {
+class Solution2 {
 public:
 	vector<int> topKFrequent(vector<int>& nums, int k) {
 		unordered_map<int, int> map;
