@@ -210,6 +210,7 @@
     <ClCompile Include="0395-Longest Substring with At Least K Repeating Characters.cpp" />
     <ClCompile Include="0412-Fizz Buzz.cpp" />
     <ClCompile Include="0454-4Sum II.cpp" />
+    <ClCompile Include="0659-Split Array into Consecutive Subsequences.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
