@@ -282,5 +282,8 @@
     <ClCompile Include="0659-Split Array into Consecutive Subsequences.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0930-Binary Subarrays With Sum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
