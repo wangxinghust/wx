@@ -285,5 +285,8 @@
     <ClCompile Include="0930-Binary Subarrays With Sum.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="1117-Building H2O.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

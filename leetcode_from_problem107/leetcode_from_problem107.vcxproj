@@ -213,6 +213,7 @@
     <ClCompile Include="0659-Split Array into Consecutive Subsequences.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
     <ClCompile Include="0930-Binary Subarrays With Sum.cpp" />
+    <ClCompile Include="1117-Building H2O.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
