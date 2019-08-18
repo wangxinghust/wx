@@ -1,5 +1,6 @@
 #include <vector>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 class Solution {
 public:
@@ -44,7 +45,7 @@ public:
 
 // Runtime: 4 ms, faster than 98.65% of C++ online submissions for Maximum Subarray.
 // Memory Usage : 9.1 MB, less than 100.00 % of C++ online submissions for Maximum Subarray.
-class Solution2{
+class Solution2 {
 public:
 	int maxSubArray(vector<int>& nums) {
 		int max = INT_MIN;
@@ -61,7 +62,7 @@ public:
 				if (sum < 0) { j++; break; } // 改为当前sum<0后，需要j++，跳到下一个数去，否则陷入死循环
 				else j++;
 			}
-			i = j;			
+			i = j;
 		}
 		return max;
 	}
@@ -69,9 +70,37 @@ public:
 // 滑动窗口，两重循环，外层循环left，内层循环right，而不是在同一层循环，即便是left递增，而非left=right的赋值
 // 需要牢记滑动窗口的解法
 
-//int main(int argc, char* argv[]) {
-//	vector<int> nums = { 0,-3,1,1 };
-//	Solution2 s;
-//	int ans = s.maxSubArray(nums);
-//	return 0;
-//}
+// 复现一下当时的解题思路，查看问题，看来可能是当时++没写或者其他的错误了
+// Runtime: 8 ms, faster than 71.69% of C++ online submissions for Maximum Subarray.
+// Memory Usage : 9.2 MB, less than 91.18 % of C++ online submissions for Maximum Subarray.
+class Solution3 {
+public:
+	int maxSubArray(vector<int>& nums) {
+		int max = INT_MIN;
+		int N = nums.size();
+		int left = 0, right = 0, sum = 0;
+		while (left < N && right < N) {
+			while (right < N) {
+				sum += nums[right++];
+				if (sum > max) max = sum;
+				if (sum < 0) break;
+			}
+			while (left < right) {
+				sum -= nums[left++];
+				// if (sum > max) max = sum;// 貌似这一句是没有必要的 加了这一句，会在全是负数的时候导致sum减至0时错误将max置为0了
+				if (sum > 0) break;
+			}
+		}
+		return max;
+	}
+};
+
+int main(int argc, char* argv[]) {
+	//vector<int> nums = { 0,-3,1,1 };
+	vector<int> nums = { -1 };
+	Solution3 s;
+	int ans = s.maxSubArray(nums);
+	cout << ans << endl;
+	char c = getchar();
+	return 0;
+}
