@@ -127,6 +127,7 @@
     <ClCompile Include="0108-Convert Sorted Array to Binary Search Tree.cpp" />
     <ClCompile Include="0109-Convert Sorted List to Binary Search Tree.cpp" />
     <ClCompile Include="0110-Balanced Binary Tree.cpp" />
+    <ClCompile Include="0114-Flatten Binary Tree to Linked List.cpp" />
     <ClCompile Include="0116-Populating Next Right Pointers in Each Node.cpp" />
     <ClCompile Include="0118-Pascal%27s Triangle.cpp" />
     <ClCompile Include="0121-Best Time to Buy and Sell Stock.cpp" />

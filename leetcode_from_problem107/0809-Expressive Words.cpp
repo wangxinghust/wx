@@ -98,11 +98,11 @@ public:
 };
 
 
-int main(int argc, char* argv[]) {
-	/*string S = "heeellooo";
-	vector<string> words = { "hello","hi","helo" };*/
-	string S = "dddiiiinnssssssoooo";
-	vector<string> words = { "dinnssoo","ddinso","ddiinnso","ddiinnssoo","ddiinso","dinsoo","ddiinsso","dinssoo","dinso" };
-	cout << Solution2().expressiveWords(S, words);
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	/*string S = "heeellooo";
+//	vector<string> words = { "hello","hi","helo" };*/
+//	string S = "dddiiiinnssssssoooo";
+//	vector<string> words = { "dinnssoo","ddinso","ddiinnso","ddiinnssoo","ddiinso","dinsoo","ddiinsso","dinssoo","dinso" };
+//	cout << Solution2().expressiveWords(S, words);
+//	return 0;
+//}
