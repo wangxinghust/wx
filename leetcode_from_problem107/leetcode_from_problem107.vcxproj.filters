@@ -297,5 +297,8 @@
     <ClCompile Include="0114-Flatten Binary Tree to Linked List.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0226-Invert Binary Tree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

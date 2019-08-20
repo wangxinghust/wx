@@ -76,6 +76,8 @@ public:
 };
 
 // Divide-­‐and-­‐conquer Approach
+// Runtime: 0 ms, faster than 100.00% of C++ online submissions for Number of 1 Bits.
+// Memory Usage : 8.2 MB, less than 75.61 % of C++ online submissions for Number of 1 Bits.
 class Solution5 {
 public:
 	int hammingWeight(uint32_t n) {
