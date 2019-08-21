@@ -1,6 +1,9 @@
 #include <functional>
 #include <mutex>
 #include <condition_variable>
+#include <vector>
+#include <thread>
+#include <iostream>
 using namespace std;
 
 class ZeroEvenOdd {
@@ -60,6 +63,20 @@ public:
 	}
 };
 
-int main() {
-	return 0;
+void printNumber(int x) {
+	std::this_thread::sleep_for(std::chrono::seconds(1));//ÑÓ»º×Ö·ûÊä³öÊ±¼ä
+	cout << x;
 }
+
+//int main() {
+//	ZeroEvenOdd zeo(5);
+//	vector<thread> threads;
+//	threads.push_back(thread(&ZeroEvenOdd::zero, &zeo, printNumber));
+//	threads.push_back(thread(&ZeroEvenOdd::even, &zeo, printNumber));
+//	threads.push_back(thread(&ZeroEvenOdd::odd, &zeo, printNumber));
+//	for (int i = 0; i < 3; i++) {
+//		threads[i].join();
+//	}
+//	cout << endl;
+//	return 0;
+//}

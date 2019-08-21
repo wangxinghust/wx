@@ -1,6 +1,7 @@
 #include <functional>
 #include <mutex>
 #include <condition_variable>
+#include <iostream>
 using namespace std;
 class FooBar {
 private:
@@ -41,3 +42,14 @@ public:
 		}
 	}
 };
+
+//int main(int argc, char* argv[]) {
+//	FooBar fb(3);
+//	thread t1(&FooBar::foo, &fb, [] {cout << "foo"; });
+//	thread t2(&FooBar::bar, &fb, [] {cout << "bar"; });
+//
+//	t1.join();
+//	t2.join();
+//
+//	return 0;
+//}

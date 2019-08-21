@@ -1,5 +1,6 @@
 #include <functional>
 #include <mutex>
+#include <iostream>
 using namespace std;
 
 // leetcode by gs_panwar
@@ -47,3 +48,32 @@ public:
 		cv.notify_one();
 	}
 };
+
+H2O c;
+void HThread() {
+	c.hydrogen([] {
+		cout << "H";
+		});
+}
+void OThread() {
+	c.oxygen([] {
+		cout << "O";
+		});
+}
+
+int main(int argc, char* argv[]) {
+	string test = "HOHOHHOOHOHHHHHOHHHOH";
+
+	cout << "input str: " << test << endl;
+	for (int i = 0; i < test.size(); ++i) {		
+		if (test[i] == 'H') {
+			thread* th = new thread(HThread);
+		}
+		else if (test[i] == 'O') {
+			thread* th = new thread(OThread);
+		}
+	}
+	// 主线程睡眠等待所有子线程执行完毕
+	std::this_thread::sleep_for(std::chrono::seconds(5));
+	return 0;
+}

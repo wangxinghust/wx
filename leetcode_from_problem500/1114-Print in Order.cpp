@@ -1,5 +1,7 @@
 #include <functional>
 #include <mutex>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 class Foo {
@@ -45,3 +47,31 @@ public:
 		lck.unlock();
 	}
 };
+
+void printFirst() {
+	this_thread::sleep_for(chrono::seconds(1));
+	cout << "first";
+}
+void printSecond() {
+	this_thread::sleep_for(chrono::seconds(1));
+	cout << "second";
+}
+void printThird() {
+	this_thread::sleep_for(chrono::seconds(1));
+	cout << "third";
+}
+
+//int main() {
+//	Foo foo;
+//	vector<thread> threads;
+//	//function<void()> printFirst = [] {cout << "first"; };
+//	threads.push_back(thread(bind(&Foo::first, &foo, printFirst)));
+//	threads.push_back(thread(bind(&Foo::second, &foo, printSecond)));
+//	threads.push_back(thread(bind(&Foo::third, &foo, printThird)));
+//
+//	for (int i = 0; i < 3; i++) {
+//		threads[i].join();
+//	}
+//	cout << endl;
+//	return 0;
+//}
