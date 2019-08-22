@@ -193,6 +193,7 @@
     <ClCompile Include="0295-Find Median from Data Stream.cpp" />
     <ClCompile Include="0297-Serialize and Deserialize Binary Tree.cpp" />
     <ClCompile Include="0300-Longest Increasing Subsequence.cpp" />
+    <ClCompile Include="0301-Remove Invalid Parentheses.cpp" />
     <ClCompile Include="0315-Count of Smaller Numbers After Self.cpp" />
     <ClCompile Include="0322-Coin Change.cpp" />
     <ClCompile Include="0324-Wiggle Sort II.cpp" />

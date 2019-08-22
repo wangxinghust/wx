@@ -282,5 +282,8 @@
     <ClCompile Include="0226-Invert Binary Tree.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0301-Remove Invalid Parentheses.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
