@@ -42,5 +42,8 @@
     <ClCompile Include="1116-Print Zero Even Odd.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0503-Next Greater Element II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

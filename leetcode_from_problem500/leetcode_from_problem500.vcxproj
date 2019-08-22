@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="0503-Next Greater Element II.cpp" />
     <ClCompile Include="0659-Split Array into Consecutive Subsequences.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
     <ClCompile Include="0809-Expressive Words.cpp" />

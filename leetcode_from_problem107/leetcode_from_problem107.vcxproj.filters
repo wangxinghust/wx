@@ -285,5 +285,8 @@
     <ClCompile Include="0301-Remove Invalid Parentheses.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0496-Next Greater Element I.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

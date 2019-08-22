@@ -213,6 +213,7 @@
     <ClCompile Include="0395-Longest Substring with At Least K Repeating Characters.cpp" />
     <ClCompile Include="0412-Fizz Buzz.cpp" />
     <ClCompile Include="0454-4Sum II.cpp" />
+    <ClCompile Include="0496-Next Greater Element I.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
