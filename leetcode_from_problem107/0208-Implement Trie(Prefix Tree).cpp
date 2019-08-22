@@ -4,6 +4,7 @@ using namespace std;
 
 // Runtime: 156 ms, faster than 8.12% of C++ online submissions for Implement Trie (Prefix Tree).
 // Memory Usage : 112.5 MB, less than 5.11 % of C++ online submissions for Implement Trie(Prefix Tree).
+// 将单词的全部结果存入unordered_set中，方便查询，时间复杂度和空间复杂度高
 class Trie2 {
 public:
 	unordered_set<string> words;
@@ -40,6 +41,9 @@ public:
  * bool param_3 = obj->startsWith(prefix);
  */
 
+
+// 字典树 重点在于isend、shared和vector<TrieNode*> ，根节点不包含字符，除根节点外每一个节点都只包含一个字符 
+// 常用的三个操作，insert、search、和 startWith
 // Runtime: 88 ms, faster than 47.83% of C++ online submissions for Implement Trie (Prefix Tree).
 // Memory Usage : 30.5 MB, less than 93.71 % of C++ online submissions for Implement Trie(Prefix Tree).
 class TrieNode {
