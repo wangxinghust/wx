@@ -288,5 +288,20 @@
     <ClCompile Include="0496-Next Greater Element I.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0312-Burst Balloons.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0309-Best Time to Buy and Sell Stock with Cooldown.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0337-House Robber III.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0338-Counting Bits.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0394-Decode String.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
