@@ -303,5 +303,17 @@
     <ClCompile Include="0394-Decode String.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0399-Evaluate Division.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0416-Partition Equal Subset Sum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0437-Path Sum III.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0406-Queue Reconstruction by Height.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

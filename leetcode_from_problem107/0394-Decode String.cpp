@@ -38,27 +38,27 @@ public:
 	}
 };
 
-int main() {
-	vector<string> test = {
-		"3[a]2[bc]",
-		"3[a2[c]]",
-		"2[abc]3[cd]ef"
-	};
-	for (auto str : test) {
-		cout << Solution().decodeString(str) << endl;
-	}
-	cout << endl;
-
-	string leetcode = "100[leetcode]";
-	string leetcode_result = "";
-	for (int i = 0; i < 100; i++) {
-		leetcode_result += "leetcode";
-	}
-	if (leetcode_result == Solution().decodeString(leetcode)) {
-		cout << "true" << endl;
-	}
-	else {
-		cout << "false" << endl;
-	}
-	return 0;
-}
+//int main() {
+//	vector<string> test = {
+//		"3[a]2[bc]",
+//		"3[a2[c]]",
+//		"2[abc]3[cd]ef"
+//	};
+//	for (auto str : test) {
+//		cout << Solution().decodeString(str) << endl;
+//	}
+//	cout << endl;
+//
+//	string leetcode = "100[leetcode]";
+//	string leetcode_result = "";
+//	for (int i = 0; i < 100; i++) {
+//		leetcode_result += "leetcode";
+//	}
+//	if (leetcode_result == Solution().decodeString(leetcode)) {
+//		cout << "true" << endl;
+//	}
+//	else {
+//		cout << "false" << endl;
+//	}
+//	return 0;
+//}
