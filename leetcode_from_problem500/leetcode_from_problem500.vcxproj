@@ -20,6 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="0503-Next Greater Element II.cpp" />
+    <ClCompile Include="0538-Convert BST to Greater Tree.cpp" />
+    <ClCompile Include="0543-Diameter of Binary Tree.cpp" />
+    <ClCompile Include="0560-Subarray Sum Equals K.cpp" />
+    <ClCompile Include="0581-Shortest Unsorted Continuous Subarray.cpp" />
     <ClCompile Include="0659-Split Array into Consecutive Subsequences.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
     <ClCompile Include="0809-Expressive Words.cpp" />

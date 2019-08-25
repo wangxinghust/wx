@@ -45,5 +45,17 @@
     <ClCompile Include="0503-Next Greater Element II.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0538-Convert BST to Greater Tree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0543-Diameter of Binary Tree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0560-Subarray Sum Equals K.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0581-Shortest Unsorted Continuous Subarray.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
