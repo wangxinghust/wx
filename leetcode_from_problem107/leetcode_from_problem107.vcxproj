@@ -219,7 +219,10 @@
     <ClCompile Include="0412-Fizz Buzz.cpp" />
     <ClCompile Include="0416-Partition Equal Subset Sum.cpp" />
     <ClCompile Include="0437-Path Sum III.cpp" />
+    <ClCompile Include="0438-Find All Anagrams in a String.cpp" />
+    <ClCompile Include="0448-Find All Numbers Disappeared in an Array.cpp" />
     <ClCompile Include="0454-4Sum II.cpp" />
+    <ClCompile Include="0494-Target Sum.cpp" />
     <ClCompile Include="0496-Next Greater Element I.cpp" />
     <ClCompile Include="0309-Best Time to Buy and Sell Stock with Cooldown.cpp" />
     <ClCompile Include="0406-Queue Reconstruction by Height.cpp" />

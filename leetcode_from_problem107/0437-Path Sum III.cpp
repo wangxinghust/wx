@@ -91,20 +91,20 @@ int stringToInteger(string input) {
 }
 
 
-int main() {
-	string line;
-	while (getline(cin, line)) {
-		TreeNode* root = stringToTreeNode(line);
-		getline(cin, line);
-		int sum = stringToInteger(line);
-
-		int ret = Solution().pathSum(root, sum);
-
-		string out = to_string(ret);
-		cout << out << endl;
-	}
-	return 0;
-}
+//int main() {
+//	string line;
+//	while (getline(cin, line)) {
+//		TreeNode* root = stringToTreeNode(line);
+//		getline(cin, line);
+//		int sum = stringToInteger(line);
+//
+//		int ret = Solution().pathSum(root, sum);
+//
+//		string out = to_string(ret);
+//		cout << out << endl;
+//	}
+//	return 0;
+//}
 
 //[10,5,-3,3,2,null,11,3,-2,null,1]
 //8
