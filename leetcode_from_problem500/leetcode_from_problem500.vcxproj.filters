@@ -57,5 +57,17 @@
     <ClCompile Include="0581-Shortest Unsorted Continuous Subarray.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0617-Merge Two Binary Trees.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0621-Task Scheduler.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0647-Palindromic Subatrings.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0739-Daily Temperatures.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

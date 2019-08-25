@@ -75,8 +75,8 @@ public:
 	}
 };
 
-int main() {
-	vector<int> nums = { 2,107,109,113,127,131,137,3,2,3,5,7,11,13,17,19,23,29,47,53 };
-	int ans = Solution3().findTargetSumWays(nums, INT_MAX);
-	return 0;
-}
+//int main() {
+//	vector<int> nums = { 2,107,109,113,127,131,137,3,2,3,5,7,11,13,17,19,23,29,47,53 };
+//	int ans = Solution3().findTargetSumWays(nums, INT_MAX);
+//	return 0;
+//}

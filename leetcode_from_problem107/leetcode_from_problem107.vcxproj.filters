@@ -324,5 +324,8 @@
     <ClCompile Include="0494-Target Sum.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0165-Compare Version Numbers.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -153,6 +153,7 @@
     <ClCompile Include="0155-Min Stack.cpp" />
     <ClCompile Include="0160-Intersection of Two Linked List.cpp" />
     <ClCompile Include="0162-Find Peak Element.cpp" />
+    <ClCompile Include="0165-Compare Version Numbers.cpp" />
     <ClCompile Include="0166-Fraction to Recurring Decimal.cpp" />
     <ClCompile Include="0169-Majority Element.cpp" />
     <ClCompile Include="0171-Excel Sheet Column Number.cpp" />
