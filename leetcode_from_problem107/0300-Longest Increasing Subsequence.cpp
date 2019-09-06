@@ -115,6 +115,21 @@ public:
 	}
 };
 
+// 基于stl low_bound 对 LIS dp 降低代码量
+// Runtime: 4 ms, faster than 90.44% of C++ online submissions for Longest Increasing Subsequence.
+// Memory Usage : 8.6 MB, less than 96.88 % of C++ online submissions for Longest Increasing Subsequence.
+class Solution5 {
+public:
+	int lengthOfLIS(vector<int>& nums) {
+		int n = nums.size();
+		vector<int> dp(n, INT_MAX);
+		for (int i = 0; i < n; ++i) {
+			*lower_bound(dp.begin(), dp.end(), nums[i]) = nums[i];
+		}
+		return lower_bound(dp.begin(), dp.end(), INT_MAX) - dp.begin();
+	}
+};
+
 //int main(int argc, char* argv[]) {
 //	//vector<int> nums = { -2,-1 };
 //	vector<int> nums = { 10,9,2,5,3,7,101,18 };
