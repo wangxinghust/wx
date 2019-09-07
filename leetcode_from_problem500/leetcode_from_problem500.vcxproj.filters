@@ -69,5 +69,8 @@
     <ClCompile Include="0739-Daily Temperatures.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0682-Baseball Game.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -28,6 +28,7 @@
     <ClCompile Include="0621-Task Scheduler.cpp" />
     <ClCompile Include="0647-Palindromic Subatrings.cpp" />
     <ClCompile Include="0659-Split Array into Consecutive Subsequences.cpp" />
+    <ClCompile Include="0682-Baseball Game.cpp" />
     <ClCompile Include="0697-Degree of an Array.cpp" />
     <ClCompile Include="0739-Daily Temperatures.cpp" />
     <ClCompile Include="0809-Expressive Words.cpp" />

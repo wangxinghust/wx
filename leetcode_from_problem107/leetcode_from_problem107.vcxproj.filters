@@ -327,5 +327,19 @@
     <ClCompile Include="0165-Compare Version Numbers.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0111-Minimum Depth of Binary Tree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0112-Path Sum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0113-Path Sum II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="0197-Rising Temperature.sql">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
