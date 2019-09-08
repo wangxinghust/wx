@@ -336,6 +336,12 @@
     <ClCompile Include="0113-Path Sum II.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0115-Distinct Subsequences.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0117-Populating Next Right Pointers in Each Node II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="0197-Rising Temperature.sql">

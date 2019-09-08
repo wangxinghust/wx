@@ -131,7 +131,9 @@
     <ClCompile Include="0112-Path Sum.cpp" />
     <ClCompile Include="0113-Path Sum II.cpp" />
     <ClCompile Include="0114-Flatten Binary Tree to Linked List.cpp" />
+    <ClCompile Include="0115-Distinct Subsequences.cpp" />
     <ClCompile Include="0116-Populating Next Right Pointers in Each Node.cpp" />
+    <ClCompile Include="0117-Populating Next Right Pointers in Each Node II.cpp" />
     <ClCompile Include="0118-Pascal%27s Triangle.cpp" />
     <ClCompile Include="0121-Best Time to Buy and Sell Stock.cpp" />
     <ClCompile Include="0122-Best Time to Buy and Sell Stock II.cpp" />
