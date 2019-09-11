@@ -152,7 +152,7 @@ public:
 //	string beginWord = "hit";
 //	string endWord = "cog";
 //	vector<string> wordList = { "hot", "dot", "dog", "lot", "log", "cog" };
-//	int ans = Solution2().ladderLength(beginWord, endWord, wordList);
+//	int ans = Solution().ladderLength(beginWord, endWord, wordList);
 //
 //	return 0;
 //}

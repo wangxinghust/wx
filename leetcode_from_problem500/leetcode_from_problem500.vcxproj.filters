@@ -72,5 +72,8 @@
     <ClCompile Include="0682-Baseball Game.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0829-Consecutive Numbers Sum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

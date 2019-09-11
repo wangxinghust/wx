@@ -63,14 +63,14 @@ public:
 };
 
 
-int main() {
-	//string s = "rabbbit";
-	//string t = "rabbit";
-	string s = "babgbag";
-	string t = "bag";
-	// 特殊用例，递归会超时
-	//"adbdadeecadeadeccaeaabdabdbcdabddddabcaaadbabaaedeeddeaeebcdeabcaaaeeaeeabcddcebddebeebedaecccbdcbcedbdaeaedcdebeecdaaedaacadbdccabddaddacdddc"
-	//"bcddceeeebecbc"
-	int sum = Solution2().numDistinct(s, t);
-	return 0;
-}
+//int main() {
+//	//string s = "rabbbit";
+//	//string t = "rabbit";
+//	string s = "babgbag";
+//	string t = "bag";
+//	// 特殊用例，递归会超时
+//	//"adbdadeecadeadeccaeaabdabdbcdabddddabcaaadbabaaedeeddeaeebcdeabcaaaeeaeeabcddcebddebeebedaecccbdcbcedbdaeaedcdebeecdaaedaacadbdccabddaddacdddc"
+//	//"bcddceeeebecbc"
+//	int sum = Solution2().numDistinct(s, t);
+//	return 0;
+//}
