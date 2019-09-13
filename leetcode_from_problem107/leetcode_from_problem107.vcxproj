@@ -160,10 +160,14 @@
     <ClCompile Include="0141-Linked List Cycle.cpp" />
     <ClCompile Include="0142-Linked List Cycle II.cpp" />
     <ClCompile Include="0143-Reorder List.cpp" />
+    <ClCompile Include="0144-Binary Tree Preorder Traversal.cpp" />
+    <ClCompile Include="0145-Binary Tree Postorder Traversal.cpp" />
     <ClCompile Include="0146-LRU Cache.cpp" />
+    <ClCompile Include="0147-Insertion Sort List.cpp" />
     <ClCompile Include="0148-Sort List.cpp" />
     <ClCompile Include="0149-Max Points on a Line.cpp" />
     <ClCompile Include="0150-Evaluate Reverse Polish Notation.cpp" />
+    <ClCompile Include="0151-Reverse Words in a String.cpp" />
     <ClCompile Include="0152-Maximum Product Subarray.cpp" />
     <ClCompile Include="0155-Min Stack.cpp" />
     <ClCompile Include="0160-Intersection of Two Linked List.cpp" />
