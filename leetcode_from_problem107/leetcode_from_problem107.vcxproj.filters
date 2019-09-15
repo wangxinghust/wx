@@ -384,6 +384,24 @@
     <ClCompile Include="0151-Reverse Words in a String.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="0153-Find Minimum in Rotated Sorted Array.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0154-Find Minimum in Rotated Sorted Array II.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0164-Maximum Gap.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0167-Two Sum II - Input array is sorted.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0168-Excel Sheet Column Title.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0173-Binary Search Tree Iterator.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="0197-Rising Temperature.sql">
