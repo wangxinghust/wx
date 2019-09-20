@@ -20,7 +20,7 @@ public:
 			//如果遍历到链表末尾处
 			if (pFirst == NULL) { 
 				pFirst = head;
-				//真对k极大情况进行优化，避免反复遍历，造成Time Limit Exceeded
+				//针对k极大情况进行优化，避免反复遍历，造成Time Limit Exceeded
 				k %= (i + 1);
 				//循环掉k%(i+1)的量
 				for (int j = 0; j < k; ++j) {

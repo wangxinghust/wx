@@ -23,7 +23,7 @@ public:
 
 
 	//leetcode dp by FujiwaranoSai
-	//maxSubArray(nums, i) = maxSubArray(nums, i - 1) > 0 ? maxSubArray(nums, i - 1) : 0 + nums[i]; 
+	//maxSubArray(nums, i) = (maxSubArray(nums, i - 1) > 0 ? maxSubArray(nums, i - 1) : 0) + nums[i]; 
 	// 基于dp，以右边界为准，得到其和最大的子数组，在计算dp过程中找到maxSum
 	int maxSubArray(vector<int>& nums) {
 		int n = nums.size();
@@ -95,12 +95,12 @@ public:
 	}
 };
 
-int main(int argc, char* argv[]) {
-	//vector<int> nums = { 0,-3,1,1 };
-	vector<int> nums = { -1 };
-	Solution3 s;
-	int ans = s.maxSubArray(nums);
-	cout << ans << endl;
-	char c = getchar();
-	return 0;
-}
+//int main(int argc, char* argv[]) {
+//	//vector<int> nums = { 0,-3,1,1 };
+//	vector<int> nums = { -1 };
+//	Solution3 s;
+//	int ans = s.maxSubArray(nums);
+//	cout << ans << endl;
+//	char c = getchar();
+//	return 0;
+//}
