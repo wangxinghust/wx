@@ -39,7 +39,7 @@ public:
 				first = first->next;
 				last = last->next;
 			}
-			//遍历到大于x的ListNode，只需要移动last指针
+			//遍历到大于等于x的ListNode，只需要移动last指针
 			else {
 				last = last->next;
 			}

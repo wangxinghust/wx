@@ -206,3 +206,179 @@ dfs或bfs，现在感觉bfs比dfs还好写点，用queue比用递归舒服
 比较简单的dp方法是对每一个i，往左查和往右查，得到right[i]-left[i]，再次遍历得最大面积
 85. Maximal Rectangle  
 转化为题84，继续计算
+86. Partition List  
+维护三个指针，first、last、cur，遍历时，first指针指向小于x的最后一个节点，last指针指向大于等于x的最后一个节点，也就是上一节点  
+当前节点满足小于x，且前一节点大于等于x时，移动至first后，更新first。同时注意newhead(dummyhead)的使用，值设为INT_MIN
+87. Scramble String  
+二叉树的大多数问题可以通过递归来解决，递归相对简单，此题里面还要注意hash数组的运用，对于字母，只需要开26大小的数组即可，然后就是暴力遍历，对每一个i都试探一遍即可
+88. Merge Sorted Array  
+从后往前遍历即可，注意第二次遍历将未遍历完的nums2数组copy到nums1数组里去  
+89. Gray Code  
+递归和bitset的运用，递归不太好理解，类二叉树
+90. Subsets II  
+totalset，初始化放入一个{}，注意排序的使用，三层循环，第一层循环数组，同时统计相同的count，第二层循环，遍历totalset，循环终止为totalset.size()，第三层循环，遍历相同数个数count，从1到count个，依次添加到totalset中
+91. Decode Ways  
+动态规划，注意'0'的避免，以及(s[i] == '2' && s[i + 1] <= '6')，从后向前遍历，可以优化之常量存储
+92. Reverse Linked List II  
+部分节点反转，定位和反转写好即可
+93. Restore IP Addresses  
+回溯法，试探解，关键是各类判断条件
+94. Binary Tree Inorder Traversal  
+二叉树中序非递归遍历
+95. Unique Binary Search Trees II  
+由前面已经计算的出来的状态推后面的，也即动态规划，三层循环，第一层遍历给的数字n，第二层遍历原有的res数组，对res数组里的每个树都进行一遍操作，两种选择，新来的节点作root，或者将新来的节点插入某个右子树节点处  
+第三层循环里即遍历所有右节点，备份原右子树，插入新节点，将原右子树插入新节点左子树即可。注意clone函数的使用，自写clone，然后就是每次插入右节点后，还需进行恢复操作，否则会重复插入新来的节点
+96. Unique Binary Search Trees  
+dp求解，注意公式推导，或者说，对每个节点而言，左子树种类数*右子树种类数即可，累计求和
+97. Interleaving String  
+2D动态规划可解，注意dp[i][j]代表的意思即可，代表着s1串i长和s2串j长能组成s3串i+j长与否，可优化
+98. Validate Binary Search Tree  
+递归求解即可，或者利用中序遍历，遍历的时候观察是否排好序即可
+99. Recover Binary Search Tree  
+中序遍历，找两个不在对应位置的，但是要注意在相邻位置的两个节点，第一次遍历到的时候，将first->next赋值给second即可
+100. Same Tree  
+递归最简单，非递归的话，用层历比较简单，层历的同时check一下，check函数判断两节点是否同时存在或同时不存在，然后层历添加即可
+101. Symmetric Tree  
+递归判断，或者改进层历，同时左层历和右层历，进行比较即可
+102. Binary Tree Level Order Traversal  
+层历
+103. Binary Tree Zigzag Level Order Traversal  
+双栈存储，或者判断奇数层or偶数层，存入数组的时候下标选用不同即可 int index = leftToRight ? i : size - 1 - i;
+104. Maximum Depth of Binary Tree  
+递归求解or层历
+105. Construct Binary Tree from Preorder and Inorder Traversal  
+递归解法最好，同时利用stl里的find函数最好
+106. Construct Binary Tree from Inorder and Postorder Traversal  
+依旧递归解法，注意helper函数的运用，而不是在原函数上递归
+107. Binary Tree Level Order Traversal II  
+使用一个level值，对ans[level]进行push_back即可，需先计算depth，也可以在常规层历的基础上，将结果反转
+108. Convert Sorted Array to Binary Search Tree  
+递归即可
+109. Convert Sorted List to Binary Search Tree  
+链表找中，记得断开链表，也可以转换为数组，即108题
+110. Balanced Binary Tree  
+常规递归解，or引入-1，当不满足条件时，返回-1，层层退出这个-1值
+111. Minimum Depth of Binary Tree  
+递归解即可，仅判断条件和depth求解有所差别
+112. Path Sum  
+root到某一节点，递归求解即可
+113. Path Sum II  
+依旧是递归求解，记得pop_back来恢复原状态，毕竟vector\<int>& path
+114. Flatten Binary Tree to Linked List  
+将右子树搬移至左子树的最右节点处即可，再将左子树搬去右边，记得重置原左子树
+115. Distinct Subsequences  
+字符串匹配必备之dp，关键还是dp过程推导  
+where mem[i+1][j+1] means that S[0..j] contains T[0..i] that many times as distinct subsequences
+```cpp
+if (t[i] == s[j]) {
+    mem[i + 1][j + 1] = mem[i][j] + mem[i + 1][j];
+} else {
+    mem[i + 1][j + 1] = mem[i + 1][j];
+}
+```
+116. Populating Next Right Pointers in Each Node  
+因为是完全二叉树，因此不用考虑right是否存在，直接在当前层对下一层进行修改即可，递增为p=p->next
+117. Populating Next Right Pointers in Each Node II  
+不是完全二叉树了，维持一个size变量，进行层历即可
+118. Pascal's Triangle  
+正常dp即可，三角形可转换一下，当成直角三角形处理，而不是等腰三角
+119. Pascal's Triangle II  
+依旧dp处理，只是改为一维数组即可
+120. Triangle  
+依旧是dp算法
+121. Best Time to Buy and Sell Stock  
+依旧是dp，dp[i]表示目前最小，再反向求一波即可，又或者优化为常量，求解min的同时，求解max
+122. Best Time to Buy and Sell Stock II  
+统计所有的上升对差值的和  
+123. Best Time to Buy and Sell Stock III  
+可以继续用dp，先算依次操作的，用dp[i]表示i点之后依次操作最大值，然后暴力遍历即可，也即在暴力求解的结果上加上第二次的操作值  
+又或者用四个变量来计算，维护hold1,hold2=INT_MIN,release1,realease2=0;然后一次循环即可。
+124. Binary Tree Maximum Path Sum  
+常规递归解，或者在递归的过程中即维护最大值，注意maxToRoot函数的运用
+125. Valid Palindrome  
+两端遍历的时候注意过滤即可，isalnum()的运用
+126. Word Ladder II  
+bfs的运用，也即queue的运用，queue中存paths，需要wordSet来保存剩下的单词，visit存遍历过的，每到新的一层时，需在wordSet中清除visit，同时清空visit，然后就是level的控制，维护minLevel和当前level  
+同时注意遍历的方式，直接从'a'到'z',暴力尝试每一种改变，查询在wordSet中是否存在，再查是否和endWord相等，注意newpaths的运用，在原path上push_back会影响下一次遍历
+127. Word Ladder  
+可以直接在题126上的基础求解，也就是求minLevel。在存储单词表的时候可以注意一下，从题126换成map的形式，存"*wor"对应的各类string,比如lwor、mwor等。
+128. Longest Consecutive Sequence  
+最简单的方法是排序后遍历，但是不满足O(n)的时间复杂度要求，可以采用hash的思路，让开空间，就可以直接用一个hashset，不让开空间，就用原数组去存，不断移动当前数到其hash位置处，直到相等或者超出范围
+129. Sum Root to Leaf Numbers  
+可以选用层历来避免递归，可以选用unordered_map来避免修改原二叉树的值，遇到leaf node加入到结果中即可
+130. Surrounded Regions  
+二维数组，是否与外界相同，那就将于外界相同的标记一下，然后遍历整个数组，将未标记的置为X，已标记的恢复O即可  
+从外界向里遍历，可用bfs，较为方便，也可以采用回溯法
+131. Palindrome Partitioning  
+依旧是dp的思路，只不过dp的计算比较奇特，由于回文的特殊性，因此从中间进行扩展，并需要考虑奇数回文和偶数回文的区别。且需要从后向前遍历较好，存储的不是int，也相对麻烦  
+也可以用dfs去遍历，关键是vector\<string>& path的用法，以及需要写一个isPalindrome判断函数
+132. Palindrome Partitioning II  
+相对于上题，仅需计算最小切割数，因此用dp求解相对较好，需要考虑的是回文的特殊性
+```cpp
+for (int j = 0; i-j >= 0 && i+j < n && s[i-j]==s[i+j] ; j++) // odd length palindrome
+    cut[i+j+1] = min(cut[i+j+1],1+cut[i-j]);
+
+for (int j = 1; i-j+1 >= 0 && i+j < n && s[i-j+1] == s[i+j]; j++) // even length palindrome
+    cut[i+j+1] = min(cut[i+j+1],1+cut[i-j+1]);
+```
+133. Clone Graph  
+利用unordered_map来保存原节点和映射节点间的对应关系，然后直接遍历即可，避免重复添加，也即是判断map里是否已有，没有则new一个
+134. Gas Station  
+部分和的问题，假设i是初始位置，那么i点之后的部分和都会大于等于0，所以i前的部分和一定是最小的，转化为求最小total的问题，可以利用stl降低代码量
+135. Candy  
+糖果分配问题，最简单好记的是开两个数组，从左遍历和从右遍历，取最大值，可以优化至开一个数组，第二次遍历的时候在原数组上求max即可，另一种方法就是判断斜率，只计算各类山，略复杂
+136. Single Number  
+异或运算即可
+137. Single Number II  
+求和的方法比较容易理解: d(非重复元素乘上倍数-原数组和)/(倍数-1)
+138. Copy List with Random Pointer  
+比较好记的思路是将复制的链表插入到原链表各节点的next处，然后复制random指针，也可以用random指针来暂存复制的节点
+139. Word Break  
+dfs不满足leetcode时间限制，常规字符串匹配还是用滑动窗口or动态规划来解，此题适宜dp  
+对于dp[i]，查0...i间dp[j]==true的，然后切割出来的字符串是否能在给的wordDict数组里找到，可优化，不必遍历0...i，根据wordDict中最长字符串len来降低遍历范围
+140. Word Break II  
+dp+dfs，先用dp求哪些地方可以匹配，然后按dp出的vector\<bool>进行dfs遍历，注意minLen和maxLen的运用，用于缩小遍历范围。  
+另外就是注意题目给的vector\<string>，可以先手动转换为unordered_set
+141. Linked List Cycle  
+链表找环，快慢指针
+142. Linked List Cycle II  
+链表找环的入口，公式推导
+143. Reorder List  
+找中，反转，合并三步
+144. Binary Tree Preorder Traversal  
+二叉树前序遍历
+145. Binary Tree Postorder Traversal  
+二叉树后序遍历，如有需要还是用递归做，非递归的关键在于当左右孩子都访问后，才能弹出栈
+146. LRU Cache  
+使用list来增删，使用unordered_map来查找，map里存key值和其对应的pair<key,list::iterator>，注意到达容量上限时，需删除list和map的back元素
+147. Insertion Sort List  
+链表插入排序，对于每一个cur，将其插入合适的地方，需每次从头遍历，找合适的插入点，同时需要跳过已排好序的
+148. Sort List  
+归并排序在链表排序中空间占用降至O(1)，快排的话，关键依旧是partitionList()函数，需要用双指针，遇到小于key值的，做一下交换  
+归并排序更好理解，找中，断开，递归（对前半段排序和对后半段进行归并排序），再合并即可
+149. Max Points on a Line  
+斜率用pair<int,int>来存，double不适合，采用map而不是hashmap来存斜率，因为hashmap底层是hash，需要手动传动hash实例类型，不如map方便  
+对每一个点，计算其后与其具有相同斜率的点的数目，第二层循环里，遍历所选点其后的所有点，有三种情况需要考虑overlap、斜率相同，同一竖直线上，可以先比较同一竖直线上和同一斜率的，取较大值，加上重叠的和本身，与result做max比较即可  
+所以需要三种考虑，两次比较，两层循环，一个pair来存斜率，一个map来存斜率和对应的点。同时还需要手写GCD函数来求最大公约数，辗转相除法。
+150. Evaluate Reverse Polish Notation  
+一般操作就是拿栈来存储对应的值，骚操作可以利用stl里的plus\<int>()等四个仿函数，用map存string对应的仿函数，遇到时调用相应的仿函数即可
+151. Reverse Words in a String  
+关键是空格过滤，利用find\_first\_not\_of和find\_first\_of函数，然后反向+即可
+152. Maximum Product Subarray  
+从前往后乘，和从后往前乘，同时比较，然后是遇0置1，相当于重启乘法，最大乘积要么从前开始，要么从后开始，不存在刚好只有中间的一段，可考虑首尾是正数负数四种情况，然后对比一下
+153. Find Minimum in Rotated Sorted Array  
+二分查找即可
+154. Find Minimum in Rotated Sorted Array II  
+对于可能有重复出现的情况，一般的二分查找容易出问题，当出现nums[mid]==nums[left]&&nums[mid]==nums[right]三值相等的情况，改成暴力遍历去解
+155. Min Stack  
+剑指offer给的双栈解法，leetcode参考的一个解法是stack中直接存pair，少创建一个stack
+160. Intersection of Two Linked Lists  
+三次遍历，一次遍历到某链表到末尾，然后交换一下长短链，第二次遍历对齐链表开头，第三次遍历找是否有交叉点即可
+162. Find Peak Element  
+要求对数复杂度，因此只好采用二分查找
+164. Maximum Gap  
+要求复杂度为O(n)，因此采用桶排序为佳，我所认为的关键点是bucketIdx的确定，int bucketIdx = (num - mini) / bucketSize;
+165. Compare Version Numbers  
+开辟一个数组来存version转换后的值，大小为4即可，默认值赋值为0,注意字符串的切割即可
+166. Fraction to Recurring Decimal  
+通过map来暂存模拟除法中出现过的数字和在结果字符串中的位置，当查找判定为循环的时候，需在该数字第一次出现的位置处insert一个'('；

@@ -45,7 +45,7 @@ public:
 						TreeNode* target = clone(oldroot);
 						//push
 						tmp.push_back(target);
-						//恢复原状态，以便下次循环使用 此处恢复不可注释
+						//恢复原状态，以便下次循环使用 此处恢复不可注释，不恢复的话，会重复插入新来的节点
 						tmpold->right = tright;
 						//移动tmpold结点
 						tmpold = tmpold->right;

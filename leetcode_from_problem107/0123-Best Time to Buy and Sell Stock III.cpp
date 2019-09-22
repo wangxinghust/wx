@@ -12,7 +12,7 @@ public:
 		// 边界限定
 		if (size < 2) return 0;
 
-		// 表示从i点买进，一次操作能赚到的最大值
+		// 表示i点之后，一次操作能赚到的最大值
 		vector<int> oneTransaction(size, 0);
 		// 暂存仅一次交易的最大值
 		int maxPrice = prices[size - 1];

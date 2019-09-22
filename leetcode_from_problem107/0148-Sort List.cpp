@@ -10,7 +10,7 @@ public:
 	ListNode(int x) :val(x), next(NULL) {}
 };
 
-// 基于快排 双指针 保证比枢纽值小的都在慢指针左侧，比枢纽值大的在慢指针和快指针之间，快指针到位后，将满指针的值和枢纽值交换即可
+// 基于快排 双指针 保证比枢纽值小的都在慢指针左侧，比枢纽值大的在慢指针和快指针之间，快指针到位后，将慢指针的值和枢纽值交换即可
 // Runtime: 456 ms, faster than 11.04% of C++ online submissions for Sort List.
 // Memory Usage : 14.8 MB, less than 35.70 % of C++ online submissions for Sort List.
 class Solution {

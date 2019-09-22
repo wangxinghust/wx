@@ -1,4 +1,7 @@
 #include <vector>
+#include <iostream>
+#include <numeric>
+#include <algorithm>
 using namespace std;
 class Solution {
 public:
@@ -43,7 +46,9 @@ public:
 };
 
 // leetcode by XBIX360555
+// https://leetcode.com/problems/gas-station/discuss/42572/Proof-of-%22if-total-gas-is-greater-than-total-cost-there-is-a-solution%22.-C%2B%2B
 // 找最小total
+// 假设i点是出发点，那么i往后的各种和都是大于0的，也就是i之后的total只会比total[i]大，因此找最小total即可
 class Solution3 {
 public:
 	int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
@@ -55,14 +60,28 @@ public:
 				subsum = total;
 				start = i + 1;
 			}
+
+			//cout << "total=" << total << "|subsum=" << subsum << "|start=" << start << endl;
 		}
 		return (total < 0) ? -1 : (start % n);
+	}
+};
+
+// 利用stl降低代码量
+class Solution4 {
+public:
+	int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+		for (int i = 0; i < gas.size(); i++)
+			gas[i] -= cost[i];
+		partial_sum(gas.begin(), gas.end(),gas.begin());
+		auto p = min_element(gas.begin(), gas.end());
+		return gas[gas.size() - 1] < 0 ? -1 : (p - gas.begin() + 1) % gas.size();
 	}
 };
 
 //int main(int argc, char* argv[]) {
 //	vector<int> gas = { 1,2,3,4,5 };
 //	vector<int> cost = { 3,4,5,1,2 };
-//	int ans = Solution().canCompleteCircuit(gas, cost);
+//	int ans = Solution3().canCompleteCircuit(gas, cost);
 //	return 0;
 //}
