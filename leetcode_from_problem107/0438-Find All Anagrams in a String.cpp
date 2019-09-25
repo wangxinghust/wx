@@ -20,7 +20,7 @@ public:
 		for (char c : p) {
 			++hashmap[c];
 		}
-		// maintain a counter to check thether match the target string
+		// maintain a counter to check whether match the target string
 		int counter = hashmap.size();// must be the map size, NOT the string size because the char may be duplicates
 
 		// two pointers: begin - left pointer of the window; end - right pointer of the window

@@ -32,7 +32,7 @@ private:
 };
 
 // leetcode by yfcheng: Union Find
-// 建立不想交的对象集
+// 建立不相交的对象集
 // 将相连的元素放入同一对象集
 // Find queries: are two objects in the same set?
 // Union commands: replace sets containing two items by their union

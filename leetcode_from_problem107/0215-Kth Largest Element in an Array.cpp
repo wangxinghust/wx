@@ -111,6 +111,37 @@ public:
 	}
 };
 
+// leetcode by codeforlove
+// 基于快排，平均时间复杂度为O(n)
+class Solution5 {
+public:
+	int findKthLargest(vector<int>& nums, int k) {
+		return findKthLargest(nums, 0, nums.size() - 1, k - 1);
+	}
+
+	int findKthLargest(vector<int>& nums, int head, int tail, int k)
+	{
+		int x = nums[head];
+		int i = head;
+		int j = tail;
+		while (i < j)
+		{
+			while (i < j && nums[j] <= x)j--;
+			nums[i] = nums[j];
+			while (i < j && nums[i] >= x)i++;
+			nums[j] = nums[i];
+		}
+		nums[i] = x;
+
+		if (i == k)
+			return nums[i];
+		if (i < k)
+			return findKthLargest(nums, i + 1, tail, k);
+		if (i > k)
+			return findKthLargest(nums, head, i - 1, k);
+	}
+};
+
 //int main(int argc, char* argv[]) {
 //	vector<int> nums = { 2,3,2,1,5,6,4,5 };
 //	int ret = Solution4().findKthLargest(nums, 2);

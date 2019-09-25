@@ -4,7 +4,7 @@
 using namespace std;
 
 // Approach 1: Backtracking
-// 回溯法的集大成者
+// 递归方法的集大成者
 // 每个左、右括号可以添加或者不
 // 剪枝算法，遇到添加到导致表达式无效的右括号，可以提前终止它的向下递归
 // Runtime: 60 ms, faster than 39.79% of C++ online submissions for Remove Invalid Parentheses.

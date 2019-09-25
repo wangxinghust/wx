@@ -38,7 +38,7 @@ public:
 		{
 			// 计算中值
 			mid = le + (ri - le) / 2;
-			// 检查mid对应的num与k值得关系
+			// 检查mid对应的num与k值的关系
 			int num = 0;
 			for (int i = 0; i < n; i++)
 			{

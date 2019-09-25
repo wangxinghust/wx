@@ -382,3 +382,174 @@ dp+dfs，先用dp求哪些地方可以匹配，然后按dp出的vector\<bool>进
 开辟一个数组来存version转换后的值，大小为4即可，默认值赋值为0,注意字符串的切割即可
 166. Fraction to Recurring Decimal  
 通过map来暂存模拟除法中出现过的数字和在结果字符串中的位置，当查找判定为循环的时候，需在该数字第一次出现的位置处insert一个'('；
+167. Two Sum II - Input array is sorted  
+滑动窗口来解即满足题目要求
+168. Excel Sheet Column Title  
+关键在%26的时候需要先自减，因为编号从1开始，而不是从0开始，因而先整体偏移1  
+169. Majority Element  
+比较好记的几种解法：hash求解，排序求解，计数投票选择，基于快排改进
+171. Excel Sheet Column Number  
+直接求即可
+172. Factorial Trailing Zeroes  
+简而言之，不断除5就可以了
+173. Binary Search Tree Iterator  
+类似中序遍历，利用stack暂存遍历过的值，构造时先存储到所有左子树的左子树，取值的时候判断有无右节点，然后类似中序遍历存取即可
+179. Largest Number  
+排序即可，排序函数的关键是 a + b > b + a ，然后需要排除一下全0的情况
+189. Rotate Array  
+循环赋值or两次反转
+190. Reverse Bits  
+利用位移运算符，模拟两次反转
+191. Number of 1 Bits  
+用flag标志去匹配、与运算n-1，或者说用静态表
+198. House Robber  
+dp求解即可，从后往前
+200. Number of Islands  
+简单的方法就是dfs，遇到1后，将其连接的全部置0即可，bfs也行，进阶操作是利用并查集，相对更复杂
+202. Happy Number  
+常规方法是利用unordered_set检查是否有重复的，进阶操作是 Floyd Cycle detection algorithm，类似链表判断是否有环，利用slow、fast，判断最后slow是否为1即可
+204. Count Primes  
+常规求质数方法，6的倍数两侧，另一种操作是利用dp来求解，空间复杂度高，但时间上更快
+206. Reverse Linked List  
+反转链表，相当简单了
+207. Course Schedule  
+判断图是否有环，bfs相对简单，邻接表，遇入度为0的就可以丢到队列进行处理，然后循环处理降低连接节点的入度即可，最后判断是否有n个入度为0的节点，可以最后遍历，也可以遍历中递减
+208. Implement Trie (Prefix Tree)  
+字典树的运用，字典树结构 char content、bool isend、int shared(此题不必)、vector<TrieNode*> children,subNode()
+209. Minimum Size Subarray Sum  
+双指针解即可，i递增，right扩张
+210. Course Schedule II  
+依旧是bfs，只是不是判断能否成功，而是需要保存一下结果
+212. Word Search II  
+dfs超时，需要用dfs配合字典树，字典树可以简化为bool is_end和一个容量为26的数组，小技巧是将遍历过的置为' '，而不是新建visit数组，但是回溯完需恢复
+215. Kth Largest Element in an Array  
+也就是nth_element()
+https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/301338/Python-or-tm-215 中文分析  
+用小顶堆即可 priority_queue<int, vector\<int>, greater\<int>> pq; 或者用multiset  
+小顶堆是保持堆的大小为k，大顶堆就是pop k次  
+基于快排的平均时间复杂度是O(n)，最好的选择大概就是快排了，sgi stl里的nth_element用的也是基于快排的改进
+217. Contains Duplicate  
+排序或者hash
+218. The Skyline Problem  
+比较好理解的方法之一是利用multiset<pair<int,int>> 来做，默认升序排列，然后利用一个mulitiset\<int> 来存储高度，需要注意的一个点是，左端点存的时候存负数，从而通过正负来区分是左端点还是右端点，左端点进堆，右端点用来移除对应的高度。遍历一波，发现前一个高度发生了变化，说明
+这是一个转折点，可以纳入结果数组，同时更新一下当前高度。
+221. Maximal Square  
+求的是方阵，相对简单，而另一道不求方阵的，是转化为高度来算最大矩形。求最大方阵，dp里用的公式是min+1,而不是max，要注意
+226. Invert Binary Tree  
+递归最简单，交换即可，非递归的话，基于层历小改即可  
+227. Basic Calculator II  
+双栈，一个存num，一个存op。遇乘除，计算完再扔进num栈，最后一次遍历的时候算加减即可
+230. Kth Smallest Element in a BST  
+中序遍历k步即可
+234. Palindrome Linked List  
+利用递归栈，理解起来比较复杂，考虑递归带来的空间复杂度O(n)，不太适合此题，允许修改链表的话，最好的是链表找中，反转后半部分，然后双指针进行比较
+236. Lowest Common Ancestor of a Binary Tree  
+递归方法的关键在于设置3个bool变量，left、right、mid变量，如果mid+left+right>=2说明该节点是所需节点  
+方法二是利用层历标记一下parent节点，可以用unordered_map来存，循环终止条件是p和q都被放入map了，不需要遍历完所有的节点，然后上溯p的所有父节点，对q上溯，同时查是否出现在p的父节点集合里就可以了
+237. Delete Node in a Linked List  
+因为给的是要删除的那个节点，因此找不到root节点，没法遍历，可以通过修改当前节点的值为下一节点的值，然后跳过下一节点即可，可以的话，还可以delete一下
+238. Product of Array Except Self  
+本题限制除法的运用，常规解法就是开个数组先暂存部分和，然后从右向左遍历即可
+239. Sliding Window Maximum  
+常规方法是利用multiset来解，但时间复杂度不满足题目的线性复杂度要求，第二种方法是维护三个指针，left、right、maxIndex，maxIndex失效时，重新维护一下，复杂度接近线性  
+最好的操作是动态规划，利用left和right数组，先按k分好区，然后left是区间内从左到右，取大值，right是区间从右到左取大值，这样，跨区间的就可以从区间分割线向左出发，最大为right[i]，分割线向右出发，最大为left[j]
+240. Search a 2D Matrix II  
+从左下角开始搜索，逐步逼近，改进思路是二分查找，或stl里的upper_bound，步进可以退出while循环，方便的返回false
+242. Valid Anagram  
+开26大小的数组即可，然后比较
+268. Missing Number  
+同样是开一个同大小的数组，然后遍历即可
+279. Perfect Squares  
+dp算法，dp[i]代表least num，从j=1开始，向前循环遍历求解，dp[i]=min(dp[i],dp[i-j*j]+1);
+283. Move Zeroes  
+双指针维护一下
+287. Find the Duplicate Number  
+可以当成链表找环，也可以用求和的方式来做吧，求和需要注意溢出，链表找环，第一步是快慢指针，第二步是将快指针重置为初始位置，速度降为慢指针，走x步，也即是m*n-k步，刚好原慢指针走到环入口
+289. Game of Life  
+计算周边和，做好标记，再更新即可
+295. Find Median from Data Stream  
+插入排序可以考虑，two heaps也行，一个max heap，一个min heap，大顶堆用于存较小的值，小顶堆用于存较大的值，因此取中间值即可，然后就是添加步骤，先丢大顶堆，再取大顶堆堆顶进小顶堆，弹出大顶堆堆顶值，依据两个堆的大小，再次平衡一下
+297. Serialize and Deserialize Binary Tree  
+简单的方法是利用递归，复杂点的是利用层历，要注意层历的终止条件的判断
+300. Longest Increasing Subsequence  
+LIS问题，动态规划，维护一个类单调栈，用stl里的*lower_bound(dp.begin(), dp.end(), nums[i]) = nums[i];可以降低很多代码量  
+返回的结果是 return lower_bound(dp.begin(), dp.end(), INT_MAX) - dp.begin();
+```cpp
+int lengthOfLIS(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> dp(n, INT_MAX);
+    for (int i = 0; i < n; ++i) {
+        *lower_bound(dp.begin(), dp.end(), nums[i]) = nums[i];
+    }
+    return lower_bound(dp.begin(), dp.end(), INT_MAX) - dp.begin();
+}
+```
+301. Remove Invalid Parentheses  
+递归法的经典运用，许多参数的整合，index、left、right计数，终止条件多层if判断，第一次判断是否到结尾处，第二次判断表达式是否有效，即左括号是否等于右括号，第三次
+判断移除的左右括号数是否小于等于最小和，因为题目要求移除极可能少的字符使其有效，第四次判断是否小于，小于的话，需要更新，等于的话加入到结果里即可。递归部分，一个添加一个字符，先判断是否'('or')'，不是的话，直接添加，递归下去，递归完需要
+恢复，是的话，就有三种情况，直接不考虑当前括号，进行递归，是'('，那么可以丢进去递归，是')'，需要判断当前右括号数量是否小于左括号数量，大于或等于的情况可以省略，即剪枝，当然，最后仍然是恢复现场，毕竟用的是string&
+309. Best Time to Buy and Sell Stock with Cooldown  
+需要有间隙期的股票交易问题，用的依然是dp，或者说四个变量来控制，比较简单易记的方式是维持三个dp数组，buy、sell和reset，再或者只用buy和sell数组的话，buy[i]与sell[i-2]产生关联
+312. Burst Balloons  
+可以视作滑动窗口，先计算只有一格的窗口，也就是k=2，然后逐步往上推导，最后返回dp[0][n-1]即可  
+可以先用 vector\<int> balloons(nums.size() + 2) 来过滤一下0，重组原数组，使用三重循环，第一层循环k，第二层循环left，第三层循环i至right(即left+k)
+315. Count of Smaller Numbers After Self  
+看来记的还不错，利用插入排序，从后向前遍历，同时利用lower_bount去查个数
+322. Coin Change  
+背包问题，动态规划
+324. Wiggle Sort II  
+大于midian的放靠前的奇数位，小于midian的放靠后的偶数位，解法依旧不太好明白
+326. Power of Three  
+能循环的话，比较简单，题目要求尽量不用循环或递归，数学上log3(n)=log10(n)/log10(3)，判断结果是不是整数即可
+328. Odd Even Linked List  
+暴力遍历即可，隔一个连接一下
+329. Longest Increasing Path in a Matrix  
+dfs，求每个点出发的最长长度，且可复用，在求另一个点时，遍历到此点，不必再往下遍历，直接加上去即可
+334. Increasing Triplet Subsequence  
+维持三个变量即可，或者一个sub[3]的数组，用LIS问题的简化方法处理
+337. House Robber III  
+递归求解，引入剪枝，可以用map存已计算好的，遍历到该值时直接返回即可
+338. Counting Bits  
+找规律问题，就像vector开辟空间一样，以2的指数的形式向上增加，每次复制前面的数，+1即可
+341. Flatten Nested List Iterator  
+需要一个栈来暂存
+344. Reverse String  
+直接交换了事
+347. Top K Frequent Elements  
+朴素方法是map来存，然后反转一下second和first顺序，丢到vector<pair<int,int>> 里排序即可  
+因为只需要求top k，因此可以大顶堆或小顶堆来做，大顶堆就是弹出k次，小顶堆就是保持有k个元素
+350. Intersection of Two Arrays II  
+排序再合并，重点是各种大量数据的情况，延伸开来的问题
+371. Sum of Two Integers  
+不能使用加法，那么只好用位运算来模拟，先异或，然后通过与运算计算进位，对进位左移，循环进行
+378. Kth Smallest Element in a Sorted Matrix  
+依旧是二分查找，但是判断的是，在每一行里去求位置，累计后的值和k作比较
+380. Insert Delete GetRandom O(1)  
+一个vector和一个unordered_map，map存插入的值和其在数组中的位置即可，弹出的操作比较取巧，取数组末尾的值，替换到要删除的值的位置，然后再删除vector末尾的值
+384. Shuffle an Array  
+洗牌算法，保留一个原数组即可
+387. First Unique Character in a String  
+hash后，再重新遍历，找第一个hash值为1的即可
+394. Decode String  
+用栈来存'['的位置以及放大的倍数即可
+395. Longest Substring with At Least K Repeating Characters  
+可以说是滑动窗口，又比较奇特的滑动窗口，判断l、r区间是否满足要求，不满足的话，就根据区间内出现次数小于k的字符来划分
+399. Evaluate Division  
+并查集的标准使用，Node节点，然后可以用map来存string对应的节点 
+```cpp
+struct Node {
+    Node* parent;
+    double value = 0.0;// 表示当前节点/parent的值，我觉得定为1.0更好，因为自己除自己为1.0
+    Node() { parent = this; }
+};
+``` 
+406. Queue Reconstruction by Height  
+按h从大到小，k从小到大排，再来根据k值将其插入指定的位置，保证前面比他大的数定下来，后序插入的比其小，不会影响他的结果
+412. Fizz Buzz  
+判断是否是15、5、3的倍数即可
+416. Partition Equal Subset Sum  
+依旧是背包问题，只不过和是sum/2，且和为奇数时，可以直接返回false
+437. Path Sum III  
+类似两重递归即可
+438. Find All Anagrams in a String  
+字符串匹配，常用滑动窗口
