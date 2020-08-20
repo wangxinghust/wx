@@ -1,4 +1,4 @@
-package com.wx.leetcode;
+package com.wx.leetcode203;
 
 /**
  * leetcode problem 203
@@ -10,7 +10,7 @@ public class RemoveLinkedListElements {
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(1);
-        Solution s = new Solution();
+        com.wx.leetcode203.Solution s = new com.wx.leetcode203.Solution();
         s.removeElements(head, 1);
     }
 }
