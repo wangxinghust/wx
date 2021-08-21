@@ -15,7 +15,7 @@ public class Solution0036 {
     /**
      * 36. Valid Sudoku
      * HashSet可升级为Bitmasking
-     * x & (1 << i)
+     * x & (1 << i) x = x | (1 << i)
      */
     public boolean isValidSudoku(char[][] board) {
         for (int i = 0; i < 9; i++) {
