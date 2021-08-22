@@ -140,7 +140,9 @@ public class Solution0850 {
         for (int[] event : events) {
             if (event == null) break;
             int y = event[0], typ = event[1], x1 = event[2], x2 = event[3];
+            // y跳跃时进行累加，如同方案2
             ans += cur_x_sum * (y - cur_y);
+            // 利用线段树合并区间值，区分typ是+或者-
             cur_x_sum = active.update(Xi.get(x1), Xi.get(x2), typ);
             cur_y = y;
         }
