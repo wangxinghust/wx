@@ -14,6 +14,9 @@ public class Solution0882 {
         }
     }
 
+    /**
+     * 邻接表方案，重点在于应用Dijkstra算法时同时记录下每条边所使用的权值，可以看代码中used这个Map的奇妙用法
+     */
     public int reachableNodes(int[][] edges, int maxMoves, int n) {
         Map<Integer, Map<Integer, Integer>> graph = new HashMap<>();
         for (int[] edge : edges) {
@@ -69,6 +72,22 @@ public class Solution0882 {
                     used.getOrDefault(edge[1] * n + edge[0], 0));
         }
 
+        return ans;
+    }
+
+    /**
+     * 邻接矩阵方案
+     */
+    public int reachableNodes2(int[][] edges, int maxMoves, int n) {
+        // 邻接矩阵
+        int[][] graph = new int[n][n];
+        // 初始化邻接矩阵
+        for (int[] edge : edges) {
+            graph[edge[0]][edge[1]] = edge[2];
+            graph[edge[1]][edge[0]] = edge[2];
+        }
+        // TODO: 9/12/21 补充邻接矩阵方案
+        int ans = 0;
         return ans;
     }
 }
