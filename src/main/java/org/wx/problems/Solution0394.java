@@ -2,6 +2,9 @@ package org.wx.problems;
 
 import java.util.Stack;
 
+/**
+ * 394. Decode String
+ */
 public class Solution0394 {
     public String decodeString(String s) {
         Stack<Integer> repeats = new Stack<Integer>();
