@@ -22,6 +22,7 @@ public class Solution0394 {
                 int index = repeats.pop();
                 int num = repeats.pop();
                 String str = sb.toString().substring(index);
+                //sb.append(str.repeat(num));
                 for (int j = num; j > 1; j--) {
                     sb.append(str);
                 }
