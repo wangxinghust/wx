@@ -1,4 +1,4 @@
-package org.wx.interview;
+package org.wx.problems;
 
 import java.util.Arrays;
 
