@@ -26,13 +26,13 @@ public class Solution0478 {
      */
     public double[] randPoint() {
         Random random = new Random();
-        double randomRadius = random.nextDouble(radius);
-        double randomRadian = random.nextDouble(0, 2);
-        double x_radius = randomRadius * Math.sin(randomRadian * Math.PI);
-        double y_radius = randomRadius * Math.cos(randomRadian * Math.PI);
+//        double randomRadius = random.nextDouble(radius);
+//        double randomRadian = random.nextDouble(0, 2);
+//        double x_radius = randomRadius * Math.sin(randomRadian * Math.PI);
+//        double y_radius = randomRadius * Math.cos(randomRadian * Math.PI);
         double[] res = new double[2];
-        res[0] = this.x_center + x_radius;
-        res[1] = this.y_center + y_radius;
+//        res[0] = this.x_center + x_radius;
+//        res[1] = this.y_center + y_radius;
         return res;
     }
 

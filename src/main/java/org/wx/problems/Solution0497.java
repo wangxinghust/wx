@@ -32,8 +32,8 @@ public class Solution0497 {
         int index = BSearchUpperBound(r);
         int[] res = new int[2];
         // 以下可以不用random，而是直接将r转换成具体的点，因为都是int类型，可以从面积向点映射
-        res[0] = this.random.nextInt(this.rects[index][0], this.rects[index][2] + 1);
-        res[1] = this.random.nextInt(this.rects[index][1], this.rects[index][3] + 1);
+//        res[0] = this.random.nextInt(this.rects[index][0], this.rects[index][2] + 1);
+//        res[1] = this.random.nextInt(this.rects[index][1], this.rects[index][3] + 1);
         return res;
     }
 
