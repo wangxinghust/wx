@@ -1,6 +1,6 @@
 package org.wx.sword;
 
-public class Solution0570 {
+public class Solution0571 {
     public int[] twoSum(int[] nums, int target) {
         int i = 0, j = nums.length - 1;
         while (i < j) {
