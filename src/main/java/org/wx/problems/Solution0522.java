@@ -2,7 +2,7 @@ package org.wx.problems;
 
 /**
  * 522. Longest Uncommon Subsequence II
- * 关键处就是要明白加入abc是uncommon subsequence，那就不存在abcd是uncommon subsequence的情况。因为abcd能从其他str删减得来，那再删掉d即得到abc
+ * 关键处就是要明白加入abc是uncommon subsequence，那就不存在abcd不是uncommon subsequence的情况。因为abcd能从其他str删减得来，那再删掉d即得到abc
  * 因此可以直接从strs数组中找那个最长的字串，而无需枚举出所有subsequence
  */
 public class Solution0522 {
