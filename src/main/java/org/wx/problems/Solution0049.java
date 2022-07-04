@@ -42,4 +42,23 @@ public class Solution0049 {
         }
         return new ArrayList<>(result.values());
     }
+
+    // 排序+哈希
+    public List<List<String>> groupAnagrams3(String[] strs) {
+        Map<String, List<String>> group = new HashMap<>();
+        for (String str : strs) {
+            // 此处可以优化为computeIfAbsent().add()
+            String key = sort(str);
+            List<String> row = group.getOrDefault(key, new ArrayList<>());
+            row.add(str);
+            group.put(key, row);
+        }
+        return new ArrayList<>(group.values());
+    }
+
+    private String sort(String str) {
+        char[] chs = str.toCharArray();
+        Arrays.sort(chs);
+        return new String(chs);
+    }
 }

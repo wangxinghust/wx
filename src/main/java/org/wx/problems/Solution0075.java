@@ -2,6 +2,9 @@ package org.wx.problems;
 
 import java.util.Arrays;
 
+/**
+ * 75. 颜色分类
+ */
 public class Solution0075 {
     public void sortColors(int[] nums) {
         // 三指针
@@ -19,6 +22,27 @@ public class Solution0075 {
             } else if (nums[i] == 2)
                 nums[++blue] = 2;
         }
+    }
+
+    // 常规解法，三向划分，用交换
+    public void sortColors2(int[] nums) {
+        int red = 0, blue = nums.length - 1, idx = 0;
+        // 注意这里是等于，因为blue指针指向的是blue颜色区的前一个位置
+        while (idx <= blue) {
+            if (nums[idx] == 0) {
+                swap(nums, red++, idx++);
+            } else if (nums[idx] == 2) {
+                swap(nums, blue--, idx);
+            } else {
+                idx++;
+            }
+        }
+    }
+
+    private void swap(int[] nums, int l, int r) {
+        int tmp = nums[l];
+        nums[l] = nums[r];
+        nums[r] = tmp;
     }
 
     public static void main(String[] args) {
