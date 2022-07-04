@@ -52,4 +52,36 @@ public class Solution0079 {
         }
         return false;
     }
+
+    //dfs，写法优化
+    public boolean exist2(char[][] board, String word) {
+        boolean[][] visit = new boolean[board.length][board[0].length];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
+                if (board[i][j] == word.charAt(0)) {
+                    boolean res = dfs(board, visit, word, i, j, 0);
+                    if (res) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    private boolean dfs(char[][] board, boolean[][] visit, String word, int i, int j, int idx) {
+        if (idx == word.length()) {
+            return true;
+        }
+        if (i >= 0 && i < board.length && j >= 0 && j < board[0].length && !visit[i][j] && board[i][j] == word.charAt(idx)) {
+            visit[i][j] = true;
+            boolean res = dfs(board, visit, word, i - 1, j, idx + 1)
+                    || dfs(board, visit, word, i + 1, j, idx + 1)
+                    || dfs(board, visit, word, i, j - 1, idx + 1)
+                    || dfs(board, visit, word, i, j + 1, idx + 1);
+            visit[i][j] = false;
+            return res;
+        }
+        return false;
+    }
 }
