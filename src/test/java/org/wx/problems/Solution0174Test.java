@@ -2,6 +2,9 @@ package org.wx.problems;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author Wang Xing
  * @date 8/4/21
@@ -19,5 +22,12 @@ public class Solution0174Test {
 
         int result = solution.calculateMinimumHP(dungeon);
         System.out.println("结果是" + result);
+    }
+
+    @Test
+    public void testMap() {
+        Map<String, Integer> map = new HashMap<>();
+        Integer val = map.getOrDefault(null, 0);
+        System.out.println(val);
     }
 }
